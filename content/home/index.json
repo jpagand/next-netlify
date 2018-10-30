@@ -1,4 +1,4 @@
 {
   "title": "Hello world!",
-  "body": "This is the first content created with next.js and netlify-cms"
+  "body": "This is the first content created with next.js and netlify-cms\n\n\n\nAdding **bold **_italic_\n\n# Title\n\n<button>button html</button>"
 }
