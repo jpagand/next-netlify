@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: master
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
+
+media_folder: static/img
+public_folder: static/img
+
+collections: 
+  - name: "pages"
+    label: "Pages"
+    extention: "json"
+    files:
+      - file: "content/home/index.json"
+        label: "Home"
+        name: "home"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      
+   
