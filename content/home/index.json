@@ -1,0 +1,158 @@
+{
+  "titre": "<span style=\"color: #F77336\">Une main tendue</span> <span style=\"color: #785391\">pour les naufragés de la vie</span>",
+  "image_intro": "/static/img/plage.jpg",
+  "section_qui": {
+    "texte_bouton": "Qui ?",
+    "titre": "Qui sont les Anges de la Rue ?",
+    "parties": [
+      {
+        "titre": "Une association dont la vocation est de venir en aide aux personnes sans abri et aux familles en difficulté",
+        "texte": "Il est insupportable en 2018 de voir tous ces hommes abandonnés sur le trottoir. Nous voulons changer les choses et rendre ce monde plus fraternel et plus humain.\r\n\nComme le disait la chanson, « **Aujourd’hui, on a plus le droit d’avoir faim ni d’avoir froid**» Ils n’ont plus faim, grâce au fantastique travail de toutes les associations, mais il ont toujours aussi froid.\r\n\nLa rue est cruelle, c’est le royaume de l’insécurité et des addictions. On y vieillit très vite, et on en meurt.\r\n\nNous sommes là pour tous ceux qui montrent une réelle volonté de s’en sortir.\r\n\nNous leurs proposons d’être hébergé, nourri, et de partager avec nous une belle aventure au sein d’une grande famille où ils ne seront plus jamais seuls.\r\n\nL’un des principes des Anges de la Rue est la participation active ou chacun, en fonction de ses capacités et ses compétences, nous aide à construire un immense édifice de solidarité qui pourra en aider beaucoup d’autres.",
+        "images": [
+          {
+            "image": "/static/img/team-big-logo.jpg"
+          }
+        ]
+      },
+      {
+        "titre": "Une détermination sans faille et sans limites.",
+        "texte": "A l’origine de l’engagement du président fondateur Robert Massaré: la naissance de sa 6ème enfant. Confronté à la maladie pendant que sa fille était en réanimation, il a du faire des choix qui pouvaient soit la sauver, soit la tuer. À ce moment-là, il a fait un pacte avec dieu: « Si tu laisses la vie à ma fille, je m’engage a consacrer ma vie à aider les autres ». Aujourd’hui Léa a 25 ans et vient de terminer des brillantes études.\n\nDébut 2014, Robert cherche des bénévoles pour construire des maisons pour les sans-abris. Valérie Senocq, sensibilisée par la cause car elle a accueilli chez elle un jeune sans abri qui a été amputé d’une jambe à cause du froid, viendra les rejoindre. Ensemble avec Eddy Massaré - l’ainé des enfants de Robert - ils décident de créer l’association « Les Anges de la ue ». Le début d’une magnifique aventure.",
+        "images": [
+          {
+            "image": "/static/img/preview-vid-jt.jpg",
+            "legende": "Robert et Valérie parlent des Anges de la Rue sur France 3 (durée: 5min)",
+            "lien_youtube": "3fXCv5awwqw"
+          },
+          {
+            "image": "/static/img/preview-vid-gamal.jpg",
+            "legende": "La belle histoire de Gamal, qui a trouvé une famille d’accueil grâce aux Anges de la Rue (durée: 4min)",
+            "lien_youtube": "5FxCM1pBSBs"
+          },
+          {
+            "image": "/static/img/preview-vid-jennyfer.jpg",
+            "legende": "Jennifer, première relogée des Anges de la Rue (durée: 2min)"
+          }
+        ]
+      }
+    ],
+    "parrains": {
+      "titre": "Une association soutenue",
+      "texte_intro": "Depuis 2014 et l’établissement d’une structure d’accueil à Sète (34) ayant accueilli près de 450 personnes issues de la rue, les rencontres se sont multipliées et des relations fortes se sont tissées avec de nombreux bienfaiteurs.",
+      "texte_outro": "Yannick Bolloré, Benjamin Castaldi, Jean Michel Maire, Michel Leeb, Gilles Verdez, Camille Combal, Jean-Luc Lemoine, Isabelle Morini-Bosc, Agathe Auproux, Énora Malagré, Eric Mendes, Mokhtar, Géraldine Maillet, Patrick Timsit, et bien d’autres nous soutiennent activement et participent au développement de nos projets et mettent leur notoriété au service de notre cause.",
+      "texte_autre_parrains": "Ils soutiennent également les Anges de la Rue :",
+      "parrains": [
+        {
+          "nom": "Cyrl Hanouna",
+          "mettre_en_avant": true,
+          "type": "Parrain officiel",
+          "metier": "Présentateur de l'émission Touche Pas à mon poste",
+          "image": "/static/img/image-3-1-.png"
+        }
+      ],
+      "images": [
+        {
+          "image": "/static/img/preview-vid-jt.jpg",
+          "legende": "legende"
+        },
+        {
+          "image": "/static/img/team-big-logo.jpg",
+          "legende": "legende"
+        }
+      ]
+    }
+  },
+  "section_quoi": {
+    "texte_bouton": "Quoi ?",
+    "titre": "Notre objectif : Faire en sorte qu'avant 2023, il n'y ait plus personne qui subisse la rue",
+    "parties": [
+      {
+        "texte": "Il y a aujourd’hui 146 000 sans abri en France. Nous souhaitons que tous ceux qui souffrent dans la rue et souhaitent s’en sortir trouvent au sein des Anges de la rue un toit, une famille ,et surtout de l’amour. Notre communauté sera pour eux une opportunité extraordinaire de se reconstruire et de trouver le bonheur d’une nouvelle vie. ",
+        "images": [
+          {
+            "image": "/static/img/table-repas-noel.jpg"
+          }
+        ]
+      },
+      {
+        "texte": "Fort de notre expérience nous avons fait le constat suivant un sans-abris sur trois et issu de l’ASE (Aide Sociale à l’Enfance, anciennement la DDASS). Leurs parcours sont « classiques » :\n\n1/ Naissance dans une famille défaillante\n2/ Pas toujours la chance de tomber sur une famille d’accueil bienveillante\n3/ À 18 ans, mis dehors sans repère affectif et financier\n4/ Face à l’adversité, c’est la dégringolade vers les vices",
+        "images": [
+          {
+            "image": "/static/img/preview-vid-interview-lyes.jpg",
+            "legende": "Robert et Valérie parlent des Anges de la Rue sur France 3 (durée: 5min)",
+            "lien_youtube": "lAm_7IMTbFQ"
+          }
+        ]
+      },
+      {
+        "titre": "Prévenir plutôt que Guérir",
+        "texte": "Nous souhaitons non seulement aider ces personnes victimes du mauvais encadrement de leur enfance, avec toutes les difficultés que cela représente, mais aussi prévenir en travaillant avec l’état , afin que les enfants placés ne deviennent pas les sans-abri ou les délinquants de demain ."
+      }
+    ]
+  },
+  "section_comment": {
+    "texte_bouton": "Comment ?",
+    "titre": "Entreprendre, innover et expérimenter pour les sans-abri",
+    "texte_intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut.",
+    "parties": [
+      {
+        "titre": "Les paniers solidaires",
+        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut. Ut efficitur hendrerit dui suscipit tempus.",
+        "image": "/static/img/panier-solidaire.png",
+        "url_lien": "/paniers-solidaires",
+        "texte_lien": "En savoir plus"
+      },
+      {
+        "titre": "Le  Jardin des Anges",
+        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut. Ut efficitur hendrerit dui suscipit tempus.",
+        "image": "/static/img/jardin-des-anges.png",
+        "url_lien": "/jardin-des-anges",
+        "texte_lien": "En savoir plus"
+      },
+      {
+        "titre": "## Montpellier ## ",
+        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut. Ut efficitur hendrerit dui suscipit tempus.",
+        "texte_lien": "Page bientôt disponible!"
+      }
+    ],
+    "texte_outro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut."
+  },
+  "section_participer": {
+    "texte_bouton": "Participer !",
+    "titre": "Participez au développement de l'association !",
+    "parties": [
+      {
+        "titre": "Devenir bénévole",
+        "texte": "Nous recherchons en permanence des personnes motivées aux compétences diverses :\nManutention, Bricolage, Mécanique, Comptabilité, Transport, Logistique, Communication, Rédaction, Développement web, Management, Encadrement, ...\nSi vous êtes partant(e), prenons contact pour en parler !",
+        "image": "/static/img/devenir-benevole.png",
+        "url_lien": "/contact",
+        "texte_lien": "Prendre contact"
+      },
+      {
+        "titre": "Faire un don d’invendus (professionnels)",
+        "texte": "Participez au succès de nos magasins solidaires en nous donnant vos invendus alimentaires ou matériels !\nContactez-nous pour en parler.",
+        "image": "/static/img/don-invendus.png",
+        "url_lien": "/contact",
+        "texte_lien": "Prendre contact"
+      },
+      {
+        "titre": "Don d’argent",
+        "texte": "Votre générosité nous fait avancer plus sereinement vers nos objectifs. Même un petit geste, c’est déjà beaucoup !\nEn nous donnant, vous bénéficiez de réductions d’impôts.",
+        "image": "/static/img/don-argent.png",
+        "texte_lien": "Ajouter html lien image paypal"
+      },
+      {
+        "titre": "Don immobilier",
+        "texte": "Aidez-nous à développer les lieux de vie de notre association en nous donnant une habitation ou un terrain.\nContactez-nous pour en parler.",
+        "image": "/static/img/don-immobilier.png",
+        "url_lien": "/contact",
+        "texte_lien": "Prendre contact"
+      },
+      {
+        "titre": "Partagez votre réseau",
+        "texte": "Vous pouvez parler de nos actions à vos amis ou à vos connaissances, ils pourront peut-être également nous aider !",
+        "image": "/static/img/partger-reseau.png",
+        "texte_lien": "Ajouter html lien image facebook youtube twitter"
+      }
+    ]
+  }
+}
