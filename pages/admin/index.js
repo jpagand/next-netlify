@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import dynamic from 'next/dynamic'
 import ApplicationLayout from '../../components/layout'
 
-const Redirect = dynamic(() => import('./redirect'), {
+const Admin = dynamic(() => import('../../components/admin'), {
   ssr: false
 })
 
@@ -11,7 +11,7 @@ class index extends Component {
   render() {
     return (
       <ApplicationLayout>
-        <Redirect/>
+        <Admin/>
       </ApplicationLayout>
     );
   }

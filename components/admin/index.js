@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import Router from 'next/router';
 import CMS from 'netlify-cms';
 import HomePagePreview from '../../cms/preview-templates/HomePagePreview'
 
 
-class Redirect extends Component {
+class Admin extends Component {
   componentDidMount () {
-      CMS.registerPreviewTemplate('home', HomePagePreview);
-      //Router.replace('/static/admin/index.html');    
-   
+      CMS.registerPreviewTemplate('home', HomePagePreview);   
   }
   render() {
     return (
@@ -19,4 +16,4 @@ class Redirect extends Component {
   }
 }
 
-export default Redirect;
+export default Admin;
