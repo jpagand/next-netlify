@@ -7,7 +7,7 @@ class ApplicationLayout extends Component {
       <Fragment>
         <Head>
           <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" key="viewport" />
-          <link href="static/admin/config.yml" type="text/yaml" rel="cms-config-url" key="cms-config-url" />
+          <link href="/static/admin/config.yml" type="text/yaml" rel="cms-config-url" key="cms-config-url" />
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" key="netlify-identity"></script>
           <script
             key="netlify-login-redirect"
