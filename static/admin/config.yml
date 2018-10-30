@@ -18,7 +18,77 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Titre, name: titre, widget: string}
+          - {label: Image_intro, name: image_intro, widget: image}
+          - {label: Qui, name: section_qui, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Images, name: images, widget: list, required: false, default: [], fields: [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Legende, name: legende, widget: string, required: false}, 
+                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                ]}
+              ]},
+              {label: Parrains, name: parrains, widget: object, fields: [
+                {label: Titre, name: titre, widget: string, required: false},
+                {label: Texte_Intro, name: texte_intro, widget: markdown, required: false},
+                {label: Texte_Outro, name: texte_outro, widget: markdown, required: false},
+                {label: Texte_autre_parrains, name: texte_autre_parrains, widget: markdown, required: false},
+                {label: Parrains, name: parrains, widget: list, fields: [
+                  {label: Nom, name: nom, widget: string},
+                  {label: Mettre_en_avant, name: mettre_en_avant, widget: boolean, default: false},
+                  {label: Type, name: type, widget: string, default: "Parrain officiel"},
+                  {label: Metier, name: metier, widget: string, required: false},
+                  {label: Image, name: image, widget: image, required: false}, 
+                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                ]},
+                {label: Images, name: images, widget: list, required: false, fields: [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Legende, name: legende, widget: string, required: false}, 
+                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                ]}
+              ]}
+            ]}
+          - {label: Quoi, name: section_quoi, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Images, name: images, widget: list, required: false, fields: [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Legende, name: legende, widget: string, required: false}, 
+                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                ]}
+              ]},
+          ]}
+          - {label: Comment, name: section_comment, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Texte_Intro, name: texte_intro, widget: markdown, required: false},
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Image, name: image, widget: image, required: false},
+                {label: Url_lien , name: url_lien, widget: string, required: false},
+                {label: Texte_lien , name: texte_lien, widget: string, required: false},
+              ]},
+              {label: Texte_Outro, name: texte_outro, widget: markdown, required: false},
+          ]}
+          - {label: Participer, name: section_participer, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Texte_Intro, name: texte_intro, widget: markdown, required: false},
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Image, name: image, widget: image, required: false},
+                {label: Url_lien , name: url_lien, widget: string, required: false},
+                {label: Texte_lien , name: texte_lien, widget: string, required: false},
+              ]},
+          ]}
       
    
