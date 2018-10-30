@@ -7,7 +7,7 @@ import SectionComment from './SectionComment';
 import SectionParticiper from './SectionParticiper';
 import colors from '../Colors';
 
-export const Home = ({ titre = '', image_intro = '', section_qui = {}, section_quoi = {}, section_comment = {}, section_participer = {} }) => {
+const Home = ({ titre = '', image_intro = '', section_qui = {}, section_quoi = {}, section_comment = {}, section_participer = {} }) => {
 
   const sections = [
     {
@@ -40,3 +40,5 @@ export const Home = ({ titre = '', image_intro = '', section_qui = {}, section_q
  
   )
 }
+
+export default Home;

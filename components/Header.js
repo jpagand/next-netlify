@@ -32,7 +32,7 @@ const Social = styled('a')`
 `
 class Header extends Component {
   isActive = (path) => {
-    return window.location.pathname === path + '/'
+    return process.browser && window.location.pathname === path + '/'
   }
   render() {
     return (
