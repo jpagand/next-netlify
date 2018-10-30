@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+import ApplicationLayout from '../components/layout'
 class index extends Component {
   render() {
     return (
-      <div>
-        Hello world!
-      </div>
+      <ApplicationLayout>
+        <Home />
+      </ApplicationLayout>
     );
   }
 }
