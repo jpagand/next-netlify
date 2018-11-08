@@ -21,16 +21,17 @@
           {
             "image": "/static/img/preview-vid-jt.jpg",
             "legende": "Robert et Valérie parlent des Anges de la Rue sur France 3 (durée: 5min)",
-            "lien_youtube": "3fXCv5awwqw"
+            "lien_youtube": "https://www.youtube.com/embed/3fXCv5awwqw"
           },
           {
             "image": "/static/img/preview-vid-gamal.jpg",
             "legende": "La belle histoire de Gamal, qui a trouvé une famille d’accueil grâce aux Anges de la Rue (durée: 4min)",
-            "lien_youtube": "5FxCM1pBSBs"
+            "lien_youtube": "https://www.youtube.com/embed/5FxCM1pBSBs"
           },
           {
             "image": "/static/img/preview-vid-jennyfer.jpg",
-            "legende": "Jennifer, première relogée des Anges de la Rue (durée: 2min)"
+            "legende": "Jennifer, première relogée des Anges de la Rue (durée: 2min)",
+            "lien_youtube": "https://www.dailymotion.com/embed/video/x559pcq"
           }
         ]
       }
