@@ -12,7 +12,7 @@ const Container = styled(Div)`
   height: 100vh;
 `
 const Footer = styled(Div)`
-  background: url('/static/img/background-ellipse-white.png')  no-repeat center center;
+  background: url('/static/img/background-ellipse-white2.png')  no-repeat center center;
   background-size: cover;
   position: absolute;
   bottom: 0;
