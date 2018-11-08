@@ -2,7 +2,17 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import { Div, Caption } from '../Typo';
 
-const ImageContainer = styled(Div)`
+const Container = styled(Div)`
+`
+const PictureContainer = styled(Div)`
+  position: relative;
+  ${props => props.withVideo && `
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  `}
+  
 `
 const Picture = styled(Div)`
   max-width: 100%;
@@ -16,14 +26,25 @@ const Legende = styled(Caption)`
   text-decoration: underline;
   
 `
+
+const PlayIcon = styled(Div)`
+  width: 42px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+`
+
 class Image extends Component {
   render() {
-    const {image, borderColor = '#979797', textColor = '#979797', ...etc} = this.props;
+    const {image, onVideoClick, borderColor = '#979797', textColor = '#979797', ...etc} = this.props;
     return (   
-          <ImageContainer {...etc}>
+          <Container {...etc}>
+          <PictureContainer withVideo={!!image.lien_youtube} onClick={() => image.lien_youtube && onVideoClick(image.lien_youtube)}>
             <Picture src={image.image} as="img"/>
+            {image.lien_youtube && <PlayIcon as="img" src="/static/img/play.png"/>}
+          </PictureContainer>
             {image.legende && image.legende.trim().length > 0 && <Legende borderColor={borderColor} textColor={textColor} marginTop={0.5}>{image.legende}</Legende>}
-          </ImageContainer>
+          </Container>
     );
   }
 }

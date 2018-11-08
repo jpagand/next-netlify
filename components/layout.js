@@ -361,6 +361,24 @@ class ApplicationLayout extends Component {
             a:visited {
               text-decoration: none;
             }
+
+            .ReactModal__Overlay {
+              background-color: rgba(0, 0, 0, 0.5) !important;
+              z-index: 999;
+            }
+        
+            .ReactModal__Content {
+              padding: 0 !important;
+              overflow: hidden !important;
+              border: none !important;
+              max-width: 640px;
+              max-height: 360px;
+              margin: 0 auto;   
+              top: 50% !important;
+              transform: translateY(-50%);  
+              background: transparent !important;
+              border-radius: 0 !important;
+            }
             `}
           </style>
         </Head>

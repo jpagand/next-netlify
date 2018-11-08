@@ -29,7 +29,7 @@ collections:
                 {label: Images, name: images, widget: list, required: false, default: [], fields: [
                   {label: Image, name: image, widget: image}, 
                   {label: Legende, name: legende, widget: string, required: false}, 
-                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
                 ]}
               ]},
               {label: Parrains, name: parrains, widget: object, fields: [
@@ -43,12 +43,12 @@ collections:
                   {label: Type, name: type, widget: string, default: "Parrain officiel"},
                   {label: Metier, name: metier, widget: string, required: false},
                   {label: Image, name: image, widget: image, required: false}, 
-                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
                 ]},
                 {label: Images, name: images, widget: list, required: false, fields: [
                   {label: Image, name: image, widget: image}, 
                   {label: Legende, name: legende, widget: string, required: false}, 
-                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
                 ]}
               ]}
             ]}
@@ -61,7 +61,7 @@ collections:
                 {label: Images, name: images, widget: list, required: false, fields: [
                   {label: Image, name: image, widget: image}, 
                   {label: Legende, name: legende, widget: string, required: false}, 
-                  {label: Lien_Youtube, name: lien_youtube, widget: string, required: false}
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
                 ]}
               ]},
           ]}
