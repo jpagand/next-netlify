@@ -1,15 +1,18 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import { Div } from '../Typo';
 import colors from '../Colors';
 
 const Container = styled(Div)``
-const Section = styled(Div)`
+const AnchorLinkStyled = styled(AnchorLink)`
   text-decoration: none;
   color: ${colors.white};
   font-size: 1.125rem;
   border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
   &:nth-of-type(1) {
     background: ${colors.green}
   }
@@ -36,7 +39,7 @@ class MenuSections extends Component {
     return (
       <Div dFlexSm centerSm>
         {sections.map(section => (
-          <Section as="a" paddingSm={[0.5,1]} marginSm={[0, 0.5]} href={`#${section.anchor}`}>{section.texte_bouton}</Section>
+            <AnchorLinkStyled offset='80' href={`#${section.anchor}`}>{section.texte_bouton}</AnchorLinkStyled>
         ))}
       </Div>
     );
