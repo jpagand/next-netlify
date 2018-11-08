@@ -26,7 +26,7 @@ class Images extends Component {
     return (
       <Fragment>
         {images.map(image => (
-          <Image colXs={12} colSm={colSize} borderColor={color}  marginBottom={1.5} image={image} onVideoClick={this.onVideoClick}/>
+          <Image colXs={12} colSm colMd={images.length > 1 ? 6 : 12} borderColor={color}  marginBottom={1.5} image={image} onVideoClick={this.onVideoClick}/>
         ))}
         <ReactModal isOpen={!!videoUrl} onRequestClose={this.closeModal}>
           <ReactPlayer url={videoUrl} playing style={{margin: '0 auto'}}/>

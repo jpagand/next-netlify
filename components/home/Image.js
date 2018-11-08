@@ -22,7 +22,7 @@ const PictureContainer = styled(Div)`
     top: -8px;
     height: 100%;
     width: 100%;
-    ${Media.sm`
+    ${Media.md`
       left: -16px;
       top: -16px;
     `}

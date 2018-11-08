@@ -49,12 +49,19 @@ const Body = styled(Div)`
 
 `
 
+const InlineImage = styled('img')`
+  float: left;
+  ${Media.sm`
+    display: none;
+  `}
+`
+
 
 const ListItem = ({ image, titre, texte, texte_lien, url_lien, color, ...etc }) => (
   <Div {...etc}>
     {!!image && <Img dNoneXs dBlockSm src={image}/>}
     <Body marginLeftSm={2}>
-      <img dNoneXs dBlockSm  align="left" src={image} width="64" style={{marginRight: 16}}/>
+      <InlineImage src={image} width="64" style={{marginRight: 16}}/>
       <Subheadline marginBottom={1} style={{color: color}}>{titre}</Subheadline>
       <Content>{texte}</Content>      
       {url_lien && url_lien.trim().length > 0 && 

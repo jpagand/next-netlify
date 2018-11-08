@@ -8,11 +8,11 @@ class Partie extends Component {
     const {titre, color, texte, images, reverse, ...etc} = this.props
     return (
       <Div row {...etc}>
-        <Div colXs={12} colSm={6}>
+        <Div colXs={12} colMd={6}>
           <Subheadline marginBottom={1} style={{color: color}}>{titre}</Subheadline>
           <Content>{texte}</Content>
         </Div>
-        <Div colXs={12} colSm={6} firstSm={reverse}>
+        <Div colXs={12} colMd={6} firstMd={reverse}>
           <Div row>
             <Images images={images} color={color}/>
           </Div>
