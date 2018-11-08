@@ -32,7 +32,7 @@ const Button = styled('a')`
   padding: 8px 12px;
 `
 const Body = styled(Div)`
-  padding-left: 82px;
+  padding-left: 0px;
   min-height: 82px;
   ${Media.sm`
     padding-left: 102px;
@@ -52,8 +52,9 @@ const Body = styled(Div)`
 
 const ListItem = ({ image, titre, texte, texte_lien, url_lien, color, ...etc }) => (
   <Div {...etc}>
-    {!!image && <Img src={image}/>}
-    <Body marginLeft={2}>
+    {!!image && <Img dNoneXs dBlockSm src={image}/>}
+    <Body marginLeftSm={2}>
+      <img dNoneXs dBlockSm  align="left" src={image} width="64" style={{marginRight: 16}}/>
       <Subheadline marginBottom={1} style={{color: color}}>{titre}</Subheadline>
       <Content>{texte}</Content>      
       {url_lien && url_lien.trim().length > 0 && 

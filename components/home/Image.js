@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import { Div, Caption } from '../Typo';
+import Media from '../Media';
 
 const Container = styled(Div)`
 `
@@ -12,6 +13,20 @@ const PictureContainer = styled(Div)`
       opacity: 0.7;
     }
   `}
+  &:before {
+    content: ' ';
+    position: absolute;
+    z-index: -1; 
+    background: ${props => props.borderColor};
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    ${Media.sm`
+      left: -16px;
+      top: -16px;
+    `}
+  }
   
 `
 const Picture = styled(Div)`
@@ -39,7 +54,7 @@ class Image extends Component {
     const {image, onVideoClick, borderColor = '#979797', textColor = '#979797', ...etc} = this.props;
     return (   
           <Container {...etc}>
-          <PictureContainer withVideo={!!image.lien_youtube} onClick={() => image.lien_youtube && onVideoClick(image.lien_youtube)}>
+          <PictureContainer borderColor={borderColor} withVideo={!!image.lien_youtube} onClick={() => image.lien_youtube && onVideoClick(image.lien_youtube)}>
             <Picture src={image.image} as="img"/>
             {image.lien_youtube && <PlayIcon as="img" src="/static/img/play.png"/>}
           </PictureContainer>

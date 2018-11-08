@@ -12,8 +12,10 @@ class Partie extends Component {
           <Subheadline marginBottom={1} style={{color: color}}>{titre}</Subheadline>
           <Content>{texte}</Content>
         </Div>
-        <Div colXs={12} colSm={6} row firstXs={reverse}>
-          <Images images={images} color={color}/>
+        <Div colXs={12} colSm={6} firstSm={reverse}>
+          <Div row>
+            <Images images={images} color={color}/>
+          </Div>
         </Div>
       </Div>
     );

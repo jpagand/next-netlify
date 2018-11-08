@@ -4,6 +4,7 @@ import {Div, Title} from '../Typo';
 import Content from '../Content';
 import MenuSections from './MenuSections';
 import colors from '../Colors';
+import Media from '../Media';
 
 const Container = styled(Div)`
   background: url(${props => props.image}) no-repeat center center;
@@ -12,7 +13,7 @@ const Container = styled(Div)`
   height: 100vh;
 `
 const Footer = styled(Div)`
-  background: url('/static/img/background-ellipse-white2.png')  no-repeat center center;
+  background: url('/static/img/background-ellipse-white.png')  no-repeat center center;
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -22,10 +23,13 @@ const Footer = styled(Div)`
 
 const Logo = styled('img')`
   position: absolute;
-  top: 150px;
   left: 50%;
+  top: 100px;
   transform: translateX(-50%);
   max-width: 80%;
+  ${Media.sm`
+    top: 150px;
+  `}
 `
 class Hero extends Component {
   render() {
@@ -33,8 +37,8 @@ class Hero extends Component {
     return (
       <Container image={image}>
         <Logo src="/static/img/les-anges-de-la-rue-logo.png" />
-        <Footer centerSm paddingSm={[1.5,0]}>
-          <Title><Content marginBottomSm={1.5}>{titre}</Content></Title>   
+        <Footer centerSm paddingBottomXs={1} paddingSm={[1.5,0]}>
+          <Title paddingXs={[0,2]} paddingSm={0}><Content marginBottomSm={1.5} centerXs>{titre}</Content></Title>   
           <MenuSections sections={sections}/>
         </Footer>
       </Container>

@@ -4,15 +4,21 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import { Div } from '../Typo';
 import colors from '../Colors';
+import Media from '../Media';
 
 const Container = styled(Div)``
 const AnchorLinkStyled = styled(AnchorLink)`
   text-decoration: none;
   color: ${colors.white};
-  font-size: 1.125rem;
+  font-size: 1rem;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  ${Media.sm`
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+  `}
   &:nth-of-type(1) {
     background: ${colors.green}
   }
@@ -37,7 +43,7 @@ class MenuSections extends Component {
   render() {
     const { sections } = this.props;
     return (
-      <Div dFlexSm centerSm>
+      <Div dFlexXs centerXs>
         {sections.map(section => (
             <AnchorLinkStyled offset='80' href={`#${section.anchor}`}>{section.texte_bouton}</AnchorLinkStyled>
         ))}

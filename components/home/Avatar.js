@@ -18,21 +18,21 @@ const Metier = styled(Caption)`
   color: #6D6D6D;
 `
 const Bandeau = styled(Div)`
-  background: ${props => props.color};
-  padding: 12px 24px;
-  color: white;
   transform: rotate(-3deg);
-  top: -24px;
-  display: inline-block;
-  position: relative;
-  margin-bottom: -24px;
+  > span {
+    background: ${props => props.color};
+    padding: 12px 24px;
+    color: white;
+    top: -24px;
+    position: relative;
+  } 
 `;
 
 const Avatar = ({nom, type, metier, image, color}) => (
   <AvatarContainer>
     <Photo>
       <img src={image} />
-      {type && <Bandeau color={color}>{type}</Bandeau>}
+      {type && <Bandeau color={color}><span>{type}</span></Bandeau>}
     </Photo>
     <Label>{nom}</Label>
     <Metier>{metier}</Metier>

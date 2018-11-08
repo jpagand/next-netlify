@@ -192,10 +192,14 @@ const Headline = styled(Div)`
 `;
 
 const Title = styled(Div)`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Vollkorn';
   line-height: 1;
-  font-weight: 600;
+  font-weight: 600;  
+  ${Media.sm`
+    font-size: 2.5rem;
+    line-height: 1.12;
+  `}
 
 `;
 
