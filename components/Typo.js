@@ -169,7 +169,7 @@ const Div = styled(Grid)`
 `;
 const Display = styled(Div)`
   font-size: 2rem;
-  font-family: 'Vollkorn';
+  font-family: Vollkorn;
   line-height: 1;
   font-weight: 600;
 
@@ -182,7 +182,7 @@ const Display = styled(Div)`
 
 const Headline = styled(Div)`
   font-size: 2rem;
-  font-family: 'Vollkorn';
+  font-family: Vollkorn;
   font-weight: 600;
 
   ${Media.sm`
@@ -193,7 +193,7 @@ const Headline = styled(Div)`
 
 const Title = styled(Div)`
   font-size: 2rem;
-  font-family: 'Vollkorn';
+  font-family: Vollkorn;
   line-height: 1;
   font-weight: 600;  
   ${Media.sm`
@@ -205,7 +205,7 @@ const Title = styled(Div)`
 
 const Subheadline = styled(Div)`
   font-size: 1.5rem;
-  font-family: 'Vollkorn';
+  font-family: Vollkorn;
   line-height: 1.33;
   font-weight: 600;
 

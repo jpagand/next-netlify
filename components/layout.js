@@ -343,7 +343,6 @@ class ApplicationLayout extends Component {
               box-sizing: border-box;
               -ms-overflow-style: scrollbar;
             }
-            @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Vollkorn:400,600,700');
             body {
                 padding: 0;   
                 font-family: 'Open Sans', sans-serif;
