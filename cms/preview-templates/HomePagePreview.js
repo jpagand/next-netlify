@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheetManager } from 'styled-components'
-import { Home } from '../../components/home'
+import Home from '../../components/home'
 
 const HomePagePreview = ({ entry, widgetFor, widgetsFor }) => {
   const data = entry.getIn(['data']).toJS()
