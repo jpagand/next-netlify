@@ -48,6 +48,13 @@
           "type": "Parrain officiel",
           "metier": "Présentateur de l'émission Touche Pas à mon poste",
           "image": "/static/img/image-3-1-.png"
+        },
+        {
+          "nom": "Freddy Mercury",
+          "mettre_en_avant": true,
+          "type": "Ambassadeur",
+          "metier": "Empailleur de chèvres",
+          "image": "/static/img/310x190_chanteur-freddie-mercury-lors-concert-stade-wembley-1986.jpg"
         }
       ],
       "images": [
