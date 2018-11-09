@@ -27,6 +27,7 @@ const Logo = styled('img')`
   top: 100px;
   transform: translateX(-50%);
   max-width: 80%;
+  width: 450px;
   ${Media.sm`
     top: 150px;
   `}
@@ -36,7 +37,7 @@ class Hero extends Component {
     const {image, titre, sections} = this.props;
     return (
       <Container image={image}>
-        <Logo src="/static/img/les-anges-de-la-rue-logo.png" />
+        <Logo src="/static/img/les-anges-de-la-rue-logo.png"  srcSet="/static/img/les-anges-de-la-rue-logo@2x.png 2x, /static/img/les-anges-de-la-rue-logo@4x.png 4x" />
         <Footer centerSm paddingBottomXs={1} paddingSm={[1.5,0]}>
           <Title paddingXs={[0,2]} paddingSm={0}><Content marginBottomSm={1.5} centerXs>{titre}</Content></Title>   
           <MenuSections sections={sections}/>
