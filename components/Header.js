@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { withWindowScroll } from 'libreact/lib/WindowScrollSensor';
 import {Div} from './Typo';
 
 const Container = styled(Div)`
   background: #fff;
   height: 58px;
-  position: absolute;
+  position: fixed;
   top: 0;
   margin: 0;
   width: 100%;
   z-index: 9;
+  padding-left: ${({progress}) => 180 * Math.min(progress, 1) }px;
+  transition: all ease-in 0.1s;
 `
 
 const Link = styled('a')`
@@ -31,17 +34,36 @@ const Social = styled('a')`
   }
 `
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      progress: 0
+     };
+  }
+  computeScrollProgress = () => {
+    const windowHeight = process.browser ? window.innerHeight / 2 : 100;
+    const scrollY = process.browser ? window.scrollY : 0;
+    const progress = process.browser ? Math.min(scrollY/windowHeight, 1) : 0
+    return progress
+  }
+  componentDidMount() {
+    this.setState({progress: this.computeScrollProgress()});
+  }
+
+  componentWillReceiveProps(props) {
+    this.setState({progress: this.computeScrollProgress()});
+  }
+
   isActive = (path) => {
-    return process.browser && window.location.pathname === path + '/'
+    return this.props.page === path || (process.browser && window.location.pathname === path + '/')
   }
   render() {
     return (
-      <Container endXs middleXs row>    
+      <Container betweenXs middleXs row progress={this.state.progress}>    
         <Div>
-          <Link href="/" active={this.isActive('')}>L'association</Link>   
-        </Div>    
-        <Div marginLeft={2}>
-          <Link href="/contact" active={this.isActive('/contact')}>Contact</Link> 
+          <Link href="/" active={this.isActive('')}>L'association</Link> 
+          <Link href="/contact" active={this.isActive('/contact')}>Contact</Link>   
         </Div>    
         <Div marginLeft={2}>
           <Social href="https://www.facebook.com/lesangesdelarue/" target="_blank" rel="nofollow"><img src="/static/img/facebook.png"/></Social>
@@ -53,4 +75,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withWindowScroll(Header);

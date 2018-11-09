@@ -25,12 +25,12 @@ const Footer = styled(Div)`
 const Logo = styled('div')`
   z-index: 9;
   position: fixed;
-  padding: ${({progress}) => 8 * Math.min(progress, 1)}px;
-  left: ${({progress}) => (-50 * Math.min(progress, 1)) + 50}%;
-  transform: translateX(${({progress}) => (50 * Math.min(progress, 1)) - 50}%);
+  padding: ${({progress}) => 8 * progress}px;
+  left: ${({progress}) => (-50 * progress) + 50}%;
+  transform: translateX(${({progress}) => (50 * progress) - 50}%);
   max-width: 80%;
-  width: ${({progress}) => ((100-450) * Math.min(progress, 1)) + 450}px;
-  top: ${({progress}) => (-20 * Math.min(progress, 1)) + 20}%;
+  width: ${({progress}) => ((100-450) * progress) + 450}px;
+  top: ${({progress}) => (-20 * progress) + 20}%;
   transition: all ease-in 0.1s;
   &:before {
     content: " ";
@@ -38,8 +38,8 @@ const Logo = styled('div')`
     height: calc(100% + 16px);
     position: absolute;
     background: white;
-    opacity: ${({progress}) => (Math.min(progress, 1))};
-    transform: rotate(${({progress}) => ( -6 * Math.min(progress, 1))}deg);
+    opacity: ${({progress}) => progress};
+    transform: rotate(${({progress}) => ( -6 * progress)}deg);
     left: -16px;
     top: -16px;
     transition: all ease-in 0.1s;
@@ -50,17 +50,36 @@ const Logo = styled('div')`
     position: relative;
   }
   ${Media.sm`
-    width: ${({progress}) => ((180-450) * Math.min(progress, 1)) + 450}px;
-    padding: ${({progress}) => 16 * Math.min(progress, 1)}px;
+    width: ${({progress}) => ((180-450) * progress) + 450}px;
+    padding: ${({progress}) => 16 * progress}px;
   `}
 `
 class Hero extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      progress: 0
+     };
+  }
+  computeScrollProgress = () => {
+    const windowHeight = process.browser ? window.innerHeight / 2 : 100;
+    const scrollY = process.browser ? window.scrollY : 0;
+    const progress = process.browser ? Math.min(scrollY/windowHeight, 1) : 0
+    return progress
+  }
+  componentDidMount() {
+    this.setState({progress: this.computeScrollProgress()});
+  }
+
+  componentWillReceiveProps(props) {
+    this.setState({progress: this.computeScrollProgress()});
+  }
+
   render() {
-    const {image, titre, sections, windowScroll} = this.props;
-    const windowHeight = process.browser && window.innerHeight / 2;
+    const {image, titre, sections} = this.props;   
     return (
-      <Container image={image}>
-        <Logo progress={(windowScroll.y/windowHeight) || 0}>
+      <Container image={image}>        
+        <Logo progress={this.state.progress}>
           <img src="/static/img/les-anges-de-la-rue-logo.png"  srcSet="/static/img/les-anges-de-la-rue-logo@2x.png 2x, /static/img/les-anges-de-la-rue-logo@4x.png 4x" />
         </Logo>
         <Footer centerSm paddingBottomXs={1} paddingSm={[1.5,0]}>

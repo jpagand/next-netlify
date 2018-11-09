@@ -30,7 +30,7 @@ const Home = ({ titre = '', image_intro = '', section_qui = {}, section_quoi = {
 
   return (
     <Fragment>
-      <Header />
+      <Header page=""/>
       <Hero image={image_intro} titre={titre} sections={sections}/>
       <SectionQui color={colors.green} {...section_qui} />
       <SectionQuoi color={colors.blue} {...section_quoi} negative />
