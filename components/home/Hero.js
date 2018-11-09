@@ -63,9 +63,9 @@ class Hero extends Component {
   }
   computeScrollProgress = () => {
     const windowHeight = process.browser ? window.innerHeight / 2 : 100;
-    const scrollY = process.browser ? window.scrollY : 0;
+    const scrollY = process.browser ? window.scrollY - 100: 0;
     const progress = process.browser ? Math.min(scrollY/windowHeight, 1) : 0
-    return progress
+    return Math.max(progress, 0)
   }
   componentDidMount() {
     this.setState({progress: this.computeScrollProgress()});
