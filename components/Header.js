@@ -2,36 +2,55 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { withWindowScroll } from 'libreact/lib/WindowScrollSensor';
 import {Div} from './Typo';
+import Media from './Media';
 
 const Container = styled(Div)`
   background: #fff;
-  height: 58px;
   position: fixed;
-  top: 0;
+  height: 58px;
   margin: 0;
-  width: 100%;
+  top: 0;
+  left: -100px;
+  right: -100px;
+  padding-right: 100px;
+  padding-left: 100px;
   z-index: 9;
-  padding-left: ${({progress}) => 180 * Math.min(progress, 1) }px;
-  transition: all ease-in 0.1s;
+  transform: translateX(${({progress}) => 100 * Math.min(progress, 1) }px);
+  transition: all ease-in 0.1s;  
+  font-size: 14px;
+  ${Media.sm`  
+    padding: 0;
+    padding-left: ${({progress}) => 180 * Math.min(progress, 1) }px;
+    transform: none;
+    right: 0;
+    left: 0;
+    font-size: 16px;
+  `}
 `
 
 const Link = styled('a')`
   color: ${props => props.active ? '#555555' :'#909090'};
   font-weight: ${props => props.active ? 'bold' :'normal'};
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   &:hover {
     opacity: 0.7;
   }
+  ${Media.sm`
+    padding 0 1rem;
+  `}
 `
 
 const Social = styled('a')`
   padding: 0 8px;
   > img {
-    height: 20px;
+    height: 16px;
   }
   &:hover {
     opacity: 0.7;
   }
+  ${Media.sm`
+    height: 20px;
+  `}
 `
 class Header extends Component {
 
