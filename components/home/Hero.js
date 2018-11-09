@@ -11,7 +11,7 @@ const Container = styled(Div)`
   background: url(${props => props.image}) no-repeat center center;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: ${props => props.height};
 `
 const Footer = styled(Div)`
   background: url('/static/img/background-ellipse-white.png')  no-repeat center center;
@@ -54,11 +54,13 @@ const Logo = styled('div')`
     padding: ${({progress}) => 16 * progress}px;
   `}
 `
+const INITIAL_HEIGHT = '100vh';
 class Hero extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      progress: 0
+      progress: 0,
+      height: INITIAL_HEIGHT
      };
   }
   computeScrollProgress = () => {
@@ -68,7 +70,7 @@ class Hero extends Component {
     return Math.max(progress, 0)
   }
   componentDidMount() {
-    this.setState({progress: this.computeScrollProgress()});
+    this.setState({progress: this.computeScrollProgress(), height: process.browser ? window.innerHeight + 'px' : INITIAL_HEIGHT});
   }
 
   componentWillReceiveProps(props) {
@@ -78,7 +80,7 @@ class Hero extends Component {
   render() {
     const {image, titre, sections} = this.props;   
     return (
-      <Container image={image}>        
+      <Container image={image} height={this.state.height}>        
         <Logo progress={this.state.progress}>
           <img src="/static/img/les-anges-de-la-rue-logo.png"  srcSet="/static/img/les-anges-de-la-rue-logo@2x.png 2x, /static/img/les-anges-de-la-rue-logo@4x.png 4x" />
         </Logo>
