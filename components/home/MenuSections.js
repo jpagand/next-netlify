@@ -9,15 +9,19 @@ import Media from '../Media';
 import { withWindowScroll } from '../../node_modules/libreact/lib/WindowScrollSensor';
 
 const Container = styled(Div)`
-  ${props => props.isFixed && `
+  ${props => props.isFixed && css`
     position: fixed;
     top: 58px;
     left: 0;
     right: 0;
     background: white;
-    padding: 14px;
-    z-index: 8;
-  `};
+    padding: 8px;
+    z-index: 9;
+    ${Media.sm`
+      padding: 14px;
+      z-index: 8;
+    `}
+  `}
   > ul {
     display: flex;
     padding: 0;
@@ -65,9 +69,9 @@ const AnchorLinkStyled = styled(AnchorLink)`
     background: white ! important;
     border: solid 1px #8B8B8B;
     color: #8B8B8B;
-    }
-    
-    font-size: 1rem;
+    }    
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
     ${Media.sm`
       font-size: 1rem;
       padding: 0.25rem 1rem;

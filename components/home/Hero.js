@@ -17,7 +17,7 @@ const Footer = styled(Div)`
   background: url('/static/img/background-ellipse-white.png')  no-repeat center center;
   background-size: cover;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
 `
