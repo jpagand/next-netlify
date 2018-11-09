@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import {Div, Title} from '../Typo';
+import { withWindowScroll } from 'libreact/lib/WindowScrollSensor';
+import { Div, Title } from '../Typo';
 import Content from '../Content';
 import MenuSections from './MenuSections';
 import colors from '../Colors';
 import Media from '../Media';
-
+console.log
 const Container = styled(Div)`
   background: url(${props => props.image}) no-repeat center center;
   background-size: cover;
@@ -21,23 +22,47 @@ const Footer = styled(Div)`
   right: 0;
 `
 
-const Logo = styled('img')`
-  position: absolute;
-  left: 50%;
-  top: 100px;
-  transform: translateX(-50%);
+const Logo = styled('div')`
+  z-index: 9;
+  position: fixed;
+  padding: ${({progress}) => 8 * Math.min(progress, 1)}px;
+  left: ${({progress}) => (-50 * Math.min(progress, 1)) + 50}%;
+  transform: translateX(${({progress}) => (50 * Math.min(progress, 1)) - 50}%);
   max-width: 80%;
-  width: 450px;
+  width: ${({progress}) => ((100-450) * Math.min(progress, 1)) + 450}px;
+  top: ${({progress}) => (-20 * Math.min(progress, 1)) + 20}%;
+  transition: all ease-in 0.1s;
+  &:before {
+    content: " ";
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    position: absolute;
+    background: white;
+    opacity: ${({progress}) => (Math.min(progress, 1))};
+    transform: rotate(${({progress}) => ( -6 * Math.min(progress, 1))}deg);
+    left: -16px;
+    top: -16px;
+    transition: all ease-in 0.1s;
+  }
+  > img {
+    width: 100%;
+    z-index: 9;
+    position: relative;
+  }
   ${Media.sm`
-    top: 150px;
+    width: ${({progress}) => ((180-450) * Math.min(progress, 1)) + 450}px;
+    padding: ${({progress}) => 16 * Math.min(progress, 1)}px;
   `}
 `
 class Hero extends Component {
   render() {
-    const {image, titre, sections} = this.props;
+    const {image, titre, sections, windowScroll} = this.props;
+    const windowHeight = process.browser && window.innerHeight / 2;
     return (
       <Container image={image}>
-        <Logo src="/static/img/les-anges-de-la-rue-logo.png"  srcSet="/static/img/les-anges-de-la-rue-logo@2x.png 2x, /static/img/les-anges-de-la-rue-logo@4x.png 4x" />
+        <Logo progress={(windowScroll.y/windowHeight) || 0}>
+          <img src="/static/img/les-anges-de-la-rue-logo.png"  srcSet="/static/img/les-anges-de-la-rue-logo@2x.png 2x, /static/img/les-anges-de-la-rue-logo@4x.png 4x" />
+        </Logo>
         <Footer centerSm paddingBottomXs={1} paddingSm={[1.5,0]}>
           <Title paddingXs={[0,2]} paddingSm={0}><Content marginBottomSm={1.5} centerXs>{titre}</Content></Title>   
           <MenuSections sections={sections}/>
@@ -47,4 +72,4 @@ class Hero extends Component {
   }
 }
 
-export default Hero;
+export default withWindowScroll(Hero);
