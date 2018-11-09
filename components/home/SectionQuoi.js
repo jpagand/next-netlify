@@ -17,10 +17,10 @@ class SectionQuoi extends Component {
   render() {
     const {titre, color, parties = [], negative} = this.props;
     return (
-      <Container color={color} paddingTop={4} paddingBottom={4}>
-        <Div container id="section_quoi">
+      <Container id="section_quoi" color={color} paddingTop={4} paddingBottom={4}>
+        <Div container>
           <Title marginBottom={2.5} centerXs style={{color: !negative && color}} negative={negative}>{titre}</Title>
-          <Div row betweenXs>
+          <Div row betweenXs>            
             {parties.map(partie => (
               <Div colXs={12} colSm={6} colMd={4}>
                 <P withBackground={partie.titre && partie.titre.trim().length > 0}>

@@ -12,8 +12,8 @@ class SectionParticiper extends Component {
   render() {
     const {titre, texte_intro, parties = [], texte_outro, color} = this.props;
     return (
-      <Container paddingTop={4} paddingBottom={4}>
-        <Div container id="section_participer">
+      <Container paddingTop={4} paddingBottom={4}  id="section_participer">
+        <Div container>
           <Title marginBottom={2.5} centerXs style={{color: color}}>{titre}</Title>
           <Div margin={[3, 0]} centerXs>
           <Content>{texte_intro}</Content>
