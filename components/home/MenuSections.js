@@ -40,7 +40,6 @@ const AnchorLinkStyled = styled(AnchorLink)`
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
   `}
-  transition: all 0.1s ease-in;
   &:nth-of-type(1) {
     background: ${colors.green};
     border: solid 1px ${colors.green};

@@ -38,7 +38,7 @@ const Logo = styled('div')`
     height: calc(100% + 16px);
     position: absolute;
     background: white;
-    opacity: ${({progress}) => progress};
+    opacity: ${({progress}) => progress >= 1 ? 1 : 0};
     transform: rotate(${({progress}) => ( -6 * progress)}deg);
     left: -16px;
     top: -16px;
