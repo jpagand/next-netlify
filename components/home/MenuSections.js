@@ -14,11 +14,11 @@ const Container = styled(Div)`
     top: 58px;
     left: 0;
     right: 0;
-    background: white;
-    padding: 8px;
+    background: transparent;
+    padding-top: 16px;
     z-index: 9;
     ${Media.sm`
-      padding: 14px;
+      padding-top: 32px;
       z-index: 8;
     `}
   `}
@@ -42,19 +42,19 @@ const AnchorLinkStyled = styled(AnchorLink)`
   `}
   &:nth-of-type(1) {
     background: ${colors.green};
-    border: solid 1px ${colors.green};
+    border: solid 1px #fff;
   }
   &:nth-of-type(2) {
     background: ${colors.blue};
-    border: solid 1px ${colors.blue};
+    border: solid 1px #fff;
   }
   &:nth-of-type(3) {
     background: ${colors.red};
-    border: solid 1px ${colors.red};
+    border: solid 1px #fff;
   }
   &:nth-of-type(4) {
     background: ${colors.purple};
-    border: solid 1px ${colors.purple};
+    border: solid 1px #fff;
   }
   &:nth-of-type(even) {
     transform: rotate(3deg)
