@@ -57,6 +57,20 @@
           "metier": "Grand publicitaire français et homme d’exception",
           "image": "/static/img/jacques-seguela-2.jpg",
           "lien_youtube": "https://www.youtube.com/watch?time_continue=5&v=Ut2E8BC6gOA"
+        },
+        {
+          "nom": "Pascal Pich",
+          "mettre_en_avant": true,
+          "type": "Ambassadeur",
+          "metier": "Ultra tri-athlète, champion du monde",
+          "image": "/static/img/pascal-pich-square.jpg"
+        },
+        {
+          "nom": "Jonathan Dassin",
+          "mettre_en_avant": true,
+          "type": "Ambassadeur",
+          "metier": "Musicien et fils du célèbre chanteur Joe Dassin",
+          "image": "/static/img/jonathan-dassin-square.jpg"
         }
       ],
       "images": [
