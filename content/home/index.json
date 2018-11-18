@@ -43,18 +43,20 @@
       "texte_autre_parrains": "Ils soutiennent également les Anges de la Rue :",
       "parrains": [
         {
-          "nom": "Cyrl Hanouna",
+          "nom": "Cyril Hanouna",
           "mettre_en_avant": true,
           "type": "Parrain officiel",
           "metier": "Présentateur de l'émission Touche Pas à mon poste",
-          "image": "/static/img/image-3-1-.png"
+          "image": "/static/img/image-3-1-.png",
+          "lien_youtube": "https://www.youtube.com/watch?v=VXeQ678Xs-U"
         },
         {
-          "nom": "Freddy Mercury",
+          "nom": "Jacques Séguéla",
           "mettre_en_avant": true,
-          "type": "Ambassadeur",
-          "metier": "Empailleur de chèvres",
-          "image": "/static/img/310x190_chanteur-freddie-mercury-lors-concert-stade-wembley-1986.jpg"
+          "type": "Parrain officiel",
+          "metier": "Grand publicitaire français et homme d’exception",
+          "image": "/static/img/jacques-seguela-2.jpg",
+          "lien_youtube": "https://www.youtube.com/watch?time_continue=5&v=Ut2E8BC6gOA"
         }
       ],
       "images": [
