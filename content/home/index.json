@@ -107,6 +107,10 @@
           "image": "/static/img/preview-vid-2.jpg",
           "legende": "Géraldine Maillet soutient les Anges de la Rue",
           "lien_youtube": "https://www.youtube.com/watch?v=U_M-8hSTuus"
+        },
+        {
+          "legende": "Benjamin Castaldi",
+          "lien_youtube": "https://www.youtube.com/watch?v=YS0kpL0n-uo"
         }
       ]
     }
