@@ -71,10 +71,6 @@
           "type": "Ambassadeur",
           "metier": "Musicien et fils du célèbre chanteur Joe Dassin",
           "image": "/static/img/jonathan-dassin-square.jpg"
-        },
-        {
-          "nom": "Touche Pas à mon Poste",
-          "lien_youtube": "https://www.youtube.com/watch?v=p6O1dC7dNAg"
         }
       ],
       "images": [
@@ -107,10 +103,6 @@
           "image": "/static/img/preview-vid-2.jpg",
           "legende": "Géraldine Maillet soutient les Anges de la Rue",
           "lien_youtube": "https://www.youtube.com/watch?v=U_M-8hSTuus"
-        },
-        {
-          "legende": "Benjamin Castaldi",
-          "lien_youtube": "https://www.youtube.com/watch?v=YS0kpL0n-uo"
         }
       ]
     }
