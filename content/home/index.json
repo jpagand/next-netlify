@@ -71,7 +71,13 @@
           "type": "Ambassadeur",
           "metier": "Musicien et fils du célèbre chanteur Joe Dassin",
           "image": "/static/img/jonathan-dassin-square.jpg"
-        }
+        },
+        {
+          "nom": "Touche Pas à mon Poste",
+          "lien_youtube": "https://www.youtube.com/watch?v=p6O1dC7dNAg"
+        },
+        {},
+        {}
       ],
       "images": [
         {
