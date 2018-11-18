@@ -160,7 +160,7 @@
         "texte_lien": "Page bientôt disponible!"
       }
     ],
-    "texte_outro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut."
+    "texte_outro": ""
   },
   "section_participer": {
     "texte_bouton": "Participer !",
