@@ -1,21 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheetManager } from 'styled-components'
-import Home from '../../components/home'
+import Contact from '../../components/contact'
 
-const HomePagePreview = ({ entry, widgetFor, widgetsFor }) => {
+const ContactPagePreview = ({ entry, widgetFor, widgetsFor }) => {
   const data = entry.getIn(['data']).toJS()
   const iframe = document.getElementsByTagName('iframe')[1]  
   const iframeHeadElem = iframe.contentDocument.head
   return (
     <StyleSheetManager target={iframeHeadElem}>
-        <Home {...data}/>
+        <Contact {...data}/>
     </StyleSheetManager>
   
   )
 }
 
-HomePagePreview.propTypes = {
+ContactPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
@@ -23,4 +23,4 @@ HomePagePreview.propTypes = {
   widgetsFor: PropTypes.func,
 }
 
-export default HomePagePreview
+export default ContactPagePreview

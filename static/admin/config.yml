@@ -13,6 +13,12 @@ collections:
     label: "Pages"
     extention: "json"
     files:
+      - file: "content/contact/index.json"
+        label: "Contact"
+        name: "contanct"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: Contenu, name: contenu, widget: markdown}
       - file: "content/home/index.json"
         label: "Home"
         name: "home"
