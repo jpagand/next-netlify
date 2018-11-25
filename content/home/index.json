@@ -43,28 +43,66 @@
       "texte_autre_parrains": "Ils soutiennent également les Anges de la Rue :",
       "parrains": [
         {
-          "nom": "Cyrl Hanouna",
+          "nom": "Cyril Hanouna",
           "mettre_en_avant": true,
           "type": "Parrain officiel",
           "metier": "Présentateur de l'émission Touche Pas à mon poste",
-          "image": "/static/img/image-3-1-.png"
+          "image": "/static/img/image-3-1-.png",
+          "lien_youtube": "https://www.youtube.com/watch?v=VXeQ678Xs-U"
         },
         {
-          "nom": "Freddy Mercury",
+          "nom": "Jacques Séguéla",
+          "mettre_en_avant": true,
+          "type": "Parrain officiel",
+          "metier": "Grand publicitaire français et homme d’exception",
+          "image": "/static/img/jacques-seguela-2.jpg",
+          "lien_youtube": "https://www.youtube.com/watch?time_continue=5&v=Ut2E8BC6gOA"
+        },
+        {
+          "nom": "Pascal Pich",
           "mettre_en_avant": true,
           "type": "Ambassadeur",
-          "metier": "Empailleur de chèvres",
-          "image": "/static/img/310x190_chanteur-freddie-mercury-lors-concert-stade-wembley-1986.jpg"
+          "metier": "Ultra tri-athlète, champion du monde",
+          "image": "/static/img/pascal-pich-square.jpg"
+        },
+        {
+          "nom": "Jonathan Dassin",
+          "mettre_en_avant": true,
+          "type": "Ambassadeur",
+          "metier": "Musicien et fils du célèbre chanteur Joe Dassin",
+          "image": "/static/img/jonathan-dassin-square.jpg"
         }
       ],
       "images": [
         {
-          "image": "/static/img/preview-vid-jt.jpg",
-          "legende": "legende"
+          "image": "/static/img/preview-vid-tpmp.jpg",
+          "legende": "Cyril Hanouna soutient l’association Les Anges de La Rue sur TPMP",
+          "lien_youtube": "https://www.youtube.com/watch?v=p6O1dC7dNAg"
         },
         {
-          "image": "/static/img/team-big-logo.jpg",
-          "legende": "legende"
+          "image": "/static/img/previex-vid-seguela.jpg",
+          "legende": "Jacques Séguéla soutient les Anges de la Rue",
+          "lien_youtube": "https://www.youtube.com/watch?v=Ut2E8BC6gOA"
+        },
+        {
+          "image": "/static/img/preview-vid-hanouna.jpg",
+          "legende": "Petit Baba Noël soutient les Anges de la Rue",
+          "lien_youtube": "https://www.youtube.com/watch?v=VXeQ678Xs-U"
+        },
+        {
+          "image": "/static/img/preview-vid-bollore.jpg",
+          "legende": "Michel Lebb soutient les Anges de la Rue",
+          "lien_youtube": "https://www.youtube.com/watch?time_continue=1&v=yCaPUxhJmMo"
+        },
+        {
+          "image": "/static/img/preview-vid-bollore1.jpg",
+          "legende": "Yannick Bolloré soutient les Anges de la Rue",
+          "lien_youtube": "https://www.youtube.com/watch?v=tL8gqG4fX3c"
+        },
+        {
+          "image": "/static/img/preview-vid-2.jpg",
+          "legende": "Géraldine Maillet soutient les Anges de la Rue",
+          "lien_youtube": "https://www.youtube.com/watch?v=U_M-8hSTuus"
         }
       ]
     }
@@ -82,7 +120,7 @@
         ]
       },
       {
-        "texte": "Fort de notre expérience nous avons fait le constat suivant un sans-abris sur trois et issu de l’ASE (Aide Sociale à l’Enfance, anciennement la DDASS). Leurs parcours sont « classiques » :\n\n1/ Naissance dans une famille défaillante\n2/ Pas toujours la chance de tomber sur une famille d’accueil bienveillante\n3/ À 18 ans, mis dehors sans repère affectif et financier\n4/ Face à l’adversité, c’est la dégringolade vers les vices",
+        "texte": "Fort de notre expérience nous avons fait le constat suivant un sans-abris sur trois et issu de l’ASE (Aide Sociale à l’Enfance, anciennement la DDASS). Leurs parcours sont « classiques » :\n\n1. Naissance dans une famille défaillante\n2. Pas toujours la chance de tomber sur une famille d’accueil bienveillante\n3. À 18 ans, mis dehors sans repère affectif et financier\n4. Face à l’adversité, c’est la dégringolade vers les vices",
         "images": [
           {
             "image": "/static/img/preview-vid-interview-lyes.jpg",
@@ -100,18 +138,18 @@
   "section_comment": {
     "texte_bouton": "Comment ?",
     "titre": "Entreprendre, innover et expérimenter pour les sans-abri",
-    "texte_intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut.",
+    "texte_intro": "",
     "parties": [
       {
         "titre": "Les paniers solidaires",
-        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut. Ut efficitur hendrerit dui suscipit tempus.",
+        "texte": "Comme l'a souhaité notre parrain Cyril Hanouna, nous travaillons pour aider les familles avant qu'elles ne tombent. Quel bonheur de voir aujourd'hui toutes ces familles arriver avec un grand sourire. Ça nous donne envie de continuer et même d'aller plus loin pour les aider. En récupérant les invendus de magasins et supermarchés des environs (Auchan Perpignan, Sète et Béziers, Promo Cash, Midi Tielles, Carrefour, Intermarché), ces familles économisent 300 à 500 euros par mois et arrivent enfin à payer leurs factures.",
         "image": "/static/img/panier-solidaire.png",
         "url_lien": "/paniers-solidaires",
         "texte_lien": "En savoir plus"
       },
       {
         "titre": "Le  Jardin des Anges",
-        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut. Ut efficitur hendrerit dui suscipit tempus.",
+        "texte": "Dans un hotel particulier à Bourg-St-Andéol (lieu classé monument historique), nous développons notre concept de village d'artistes qui, nous l'espérons, se répètera ! Le principe, c’est un lieu de résidence qui permet aux personnes qui le désirent de vivre au sein d’une communauté. Certains sont issus de la rue, d’autres sont des bénévoles qui désirent aider ou changer de vie, et d’autres sont des artistes soucieux de mettre leur talent au service d’une noble cause. Le \"Jardin des Anges\", restaurant associatif dans la cour, participe à l'équilibre financier du projet.",
         "image": "/static/img/jardin-des-anges.png",
         "url_lien": "/jardin-des-anges",
         "texte_lien": "En savoir plus"
@@ -122,7 +160,7 @@
         "texte_lien": "Page bientôt disponible!"
       }
     ],
-    "texte_outro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel convallis velit. Phasellus fermentum tincidunt leo, eget sagittis sapien condimentum quis. Praesent consectetur egestas aliquam. Donec mattis justo arcu, eu egestas nibh vestibulum ut."
+    "texte_outro": ""
   },
   "section_participer": {
     "texte_bouton": "Participer !",
