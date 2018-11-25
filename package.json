@@ -6,6 +6,7 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "libreact": "^2.6.0",
     "netlify-cms": "^2.1.3",
     "next": "^7.0.2",

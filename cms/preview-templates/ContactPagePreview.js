@@ -6,6 +6,7 @@ import Contact from '../../components/contact'
 const ContactPagePreview = ({ entry, widgetFor, widgetsFor }) => {
   const data = entry.getIn(['data']).toJS()
   const iframe = document.getElementsByTagName('iframe')[1]  
+  console.log(data)
   const iframeHeadElem = iframe.contentDocument.head
   return (
     <StyleSheetManager target={iframeHeadElem}>

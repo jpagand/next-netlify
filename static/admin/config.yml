@@ -15,7 +15,7 @@ collections:
     files:
       - file: "content/contact/index.json"
         label: "Contact"
-        name: "contanct"
+        name: "contact"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Contenu, name: contenu, widget: markdown}
