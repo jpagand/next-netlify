@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { withWindowScroll } from 'libreact/lib/WindowScrollSensor';
 import {Div} from './Typo';
 import Media from './Media';
+import Link from 'next/link'
 
 const Container = styled(Div)`
   background: #fff;
@@ -28,7 +29,7 @@ const Container = styled(Div)`
   `}
 `
 
-const Link = styled('a')`
+const StyledLink = styled('a')`
   color: ${props => props.active ? '#555555' :'#909090'};
   font-weight: ${props => props.active ? 'bold' :'normal'};
   padding: 0 0.5rem;
@@ -81,8 +82,12 @@ class Header extends Component {
     return (
       <Container betweenXs middleXs row progress={this.state.progress}>    
         <Div>
-          <Link href="/" active={this.isActive('')}>L'association</Link> 
-          <Link href="/contact" active={this.isActive('/contact')}>Contact</Link>   
+          <Link href="/">
+            <StyledLink href="/" active={this.isActive('')}>L'association</StyledLink> 
+          </Link>
+          <Link href="/contact">
+           <StyledLink href="/contact" active={this.isActive('/contact')}>Contact</StyledLink>   
+          </Link>
         </Div>    
         <Div marginLeft={2}>
           <Social href="https://www.facebook.com/lesangesdelarue/" target="_blank" rel="nofollow"><img src="/static/img/facebook.png"/></Social>
