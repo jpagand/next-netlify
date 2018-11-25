@@ -15,12 +15,12 @@ const Container = styled(Div)`
   padding-right: 100px;
   padding-left: 100px;
   z-index: 9;
-  transform: translateX(${({progress}) => 100 * Math.min(progress, 1) }px);
+  transform: translateX(${({progress}) => progress >= 1 ? 100 : 0 }px);
   transition: all ease-in 0.1s;  
   font-size: 14px;
   ${Media.sm`  
     padding: 0;
-    padding-left: ${({progress}) => 180 * Math.min(progress, 1) }px;
+    padding-left: ${({progress}) => progress >= 1 ? 180 : 0 }px;
     transform: none;
     right: 0;
     left: 0;

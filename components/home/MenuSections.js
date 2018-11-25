@@ -14,11 +14,13 @@ const Container = styled(Div)`
     top: 58px;
     left: 0;
     right: 0;
-    background: transparent;
-    padding-top: 16px;
+    background: #fff;
+    padding-top: 6px;
+    padding-bottom: 12px;
     z-index: 9;
     ${Media.sm`
-      padding-top: 32px;
+      padding-top: 6px;
+      padding-bottom: 12px;
       z-index: 8;
     `}
   `}

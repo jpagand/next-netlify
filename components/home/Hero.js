@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { withWindowScroll } from 'libreact/lib/WindowScrollSensor';
 import { Div, Title } from '../Typo';
 import Content from '../Content';
@@ -23,15 +23,29 @@ const Footer = styled(Div)`
 `
 
 const Logo = styled('div')`
-  z-index: 9;
-  position: fixed;
+  position: relative;
+  /*
   padding: ${({progress}) => 8 * progress}px;
   left: ${({progress}) => (-50 * progress) + 50}%;
   transform: translateX(${({progress}) => (50 * progress) - 50}%);
-  max-width: 80%;
   width: ${({progress}) => ((100-450) * progress) + 450}px;
   top: ${({progress}) => (-20 * progress) + 20}%;
-  transition: all ease-in 0.1s;
+  */
+  padding: 0px;
+  left: 50%;
+  top: 20%;
+  width: 450px;
+  transform: translateX(-50%);
+  ${props => props.progress >=1 && css`
+    position: fixed;
+    padding: 8px;
+    left: 0;
+    width: 100px;
+    transform: translateX(0);
+    top: 0;
+    z-index: 9;
+  `}
+  max-width: 80%;
   &:before {
     content: " ";
     width: calc(100% + 16px);
@@ -39,10 +53,9 @@ const Logo = styled('div')`
     position: absolute;
     background: white;
     opacity: ${({progress}) => progress >= 1 ? 1 : 0};
-    transform: rotate(${({progress}) => ( -6 * progress)}deg);
+    transform:  rotate(-6deg);
     left: -16px;
     top: -16px;
-    transition: all ease-in 0.1s;
   }
   > img {
     width: 100%;
@@ -50,8 +63,15 @@ const Logo = styled('div')`
     position: relative;
   }
   ${Media.sm`
-    width: ${({progress}) => ((180-450) * progress) + 450}px;
+    /*width: ${({progress}) => ((180-450) * progress) + 450}px;
     padding: ${({progress}) => 16 * progress}px;
+    */
+    width: 450px;
+    padding: 0px;
+    ${props => props.progress >= 1 && css`
+      width: 180px;
+      padding: 16px;
+    `}
   `}
 `
 const INITIAL_HEIGHT = '100vh';
