@@ -23,7 +23,7 @@ class SectionParrains extends Component {
         </Div>
         <Div colXs={12} colSm={6}>
         <Div row>
-          <Images images={images} color={color} />
+          <Images images={images} color={color} colSm={12}/>
             <Div colXs={12}>
               <Content>{texte_autre_parrains}</Content>
             </Div>
