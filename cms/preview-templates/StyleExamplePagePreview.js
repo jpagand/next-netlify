@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheetManager } from 'styled-components'
 import Content from '../../components/Content'
+import { Div } from '../../components/Typo';
 
 const ContactPagePreview = ({ entry, widgetFor, widgetsFor }) => {
   const data = entry.getIn(['data']).toJS()
@@ -9,7 +10,9 @@ const ContactPagePreview = ({ entry, widgetFor, widgetsFor }) => {
   const iframeHeadElem = iframe.contentDocument.head
   return (
     <StyleSheetManager target={iframeHeadElem}>
-        <Content>{data}</Content>
+      <Div container>
+      <Content>{data.contenu}</Content>
+      </Div>
     </StyleSheetManager>
   
   )
