@@ -1,1 +1,20 @@
-{}
+{
+  "titre": "epicerie solidaire",
+  "image_intro": "/static/img/epicerie.jpg",
+  "section_concept": {
+    "texte_bouton": "Le concept",
+    "titre": "Concept"
+  },
+  "section_localisation": {
+    "texte_bouton": "Localisation",
+    "titre": "Localisation"
+  },
+  "section_horaires": {
+    "texte_bouton": "Horaires",
+    "titre": "Horaires"
+  },
+  "section_faq": {
+    "texte_bouton": "Questions fréquentes",
+    "titre": "Questions fréquentes"
+  }
+}
