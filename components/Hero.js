@@ -75,7 +75,7 @@ const Logo = styled('div')`
   `}
 `
 const INITIAL_HEIGHT = '100vh';
-const SMALL_HEIGHT = '50vh';
+const SMALL_HEIGHT = '75vh';
 class Hero extends Component {
   constructor(props) {
     super(props);
@@ -87,7 +87,7 @@ class Hero extends Component {
   computeScrollProgress = () => {
     let windowHeight = process.browser ? window.innerHeight / 2 : 100;
     if (this.props.smallHeight) {
-      windowHeight = windowHeight / 2;
+      windowHeight = windowHeight * 0.75;
     }
     const scrollY = process.browser ? window.scrollY - 100: 0;
     const progress = process.browser ? Math.min(scrollY/windowHeight, 1) : 0
@@ -97,7 +97,7 @@ class Hero extends Component {
     let pixelHeight;
     let windowHeight;
     if (this.props.smallHeight) {
-      pixelHeight = window.innerHeight / 2;
+      pixelHeight = window.innerHeight * 0.75;
       windowHeight = SMALL_HEIGHT;
     } else {
       pixelHeight = window.innerHeight;

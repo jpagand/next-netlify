@@ -30,7 +30,7 @@ const Home = ({ titre = '', image_intro = '', section_concept = {}, section_loca
 
   return (
     <Fragment>
-      <Header page="" fixedLogo/>
+      <Header page="/epicerie-solidaire" fixedLogo/>
       <Hero image={image_intro} titre={titre} sections={sections} hideLogo smallHeight/>
       <SectionConcept color={colors.green} {...section_concept} />
       <SectionLocalisation color={colors.blue} {...section_localisation} />
