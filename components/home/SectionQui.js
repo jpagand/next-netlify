@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Div, Title } from '../Typo';
-import Partie from './Partie';
+import Partie from '../Partie';
 import SectionParrains from './SectionParrains';
 
 class SectionQui extends Component {

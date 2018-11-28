@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
-import { Div, Caption } from '../Typo';
-import Media from '../Media';
+import { Div, Caption } from './Typo';
+import Media from './Media';
 
 const Container = styled(Div)`
 `

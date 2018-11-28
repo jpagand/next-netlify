@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Div } from '../Grid';
 import { Subheadline } from '../Typo';
 import Content from '../Content';
-import Images from './Images';
+import Images from '../Images';
 import Avatar from './Avatar';
 
 class SectionParrains extends Component {

@@ -53,6 +53,37 @@ const Social = styled('a')`
     height: 20px;
   `}
 `
+
+const Logo = styled('div')`  
+  position: fixed;
+  padding: 8px;
+  left: 0;
+  width: 100px;
+  transform: translateX(0);
+  top: 0;
+  z-index: 9;
+  max-width: 80%;
+  &:before {
+    content: " ";
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    position: absolute;
+    background: white;
+    opacity: 1;
+    transform:  rotate(-6deg);
+    left: -16px;
+    top: -16px;
+  }
+  > img {
+    width: 100%;
+    z-index: 9;
+    position: relative;
+  }
+  ${Media.sm`
+    width: 180px;
+    padding: 16px;
+  `}
+`
 class Header extends Component {
 
   constructor(props) {
@@ -80,7 +111,7 @@ class Header extends Component {
   }
   render() {
     return (
-      <Container betweenXs middleXs row progress={this.state.progress}>    
+      <Container betweenXs middleXs row progress={this.props.fixedLogo ? 1 : this.state.progress}>    
         <Div>
           <Link href="/">
             <StyledLink href="/" active={this.isActive('')}>L'association</StyledLink> 
@@ -93,7 +124,12 @@ class Header extends Component {
           <Social href="https://www.facebook.com/lesangesdelarue/" target="_blank" rel="nofollow"><img src="/static/img/facebook.png"/></Social>
           <Social href="https://twitter.com/lesangesdelarue?lang=fr" target="_blank" rel="nofollow"><img src="/static/img/twitter.png"/></Social>
           <Social href="https://www.youtube.com/channel/UCWRuiMc24ZIr0CjQRbQRHDQ" target="_blank" rel="nofollow"><img src="/static/img/youtube.png"/></Social>
-        </Div>    
+        </Div> 
+        {this.props.fixedLogo &&  
+        <Logo>
+          <img src="/static/img/les-anges-de-la-rue-logo.png"  srcSet="/static/img/les-anges-de-la-rue-logo@2x.png 2x, /static/img/les-anges-de-la-rue-logo@4x.png 4x" />
+        </Logo> 
+        }
       </Container>
     );
   }

@@ -2,11 +2,11 @@ import React, { Component, Fragment } from 'react';
 import styled, {css} from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Scrollspy from 'react-scrollspy'
+import { withWindowScroll } from 'libreact/lib/WindowScrollSensor';
 
-import { Div } from '../Typo';
-import colors from '../Colors';
-import Media from '../Media';
-import { withWindowScroll } from '../../node_modules/libreact/lib/WindowScrollSensor';
+import { Div } from './Typo';
+import colors from './Colors';
+import Media from './Media';
 
 const Container = styled(Div)`
   ${props => props.isFixed && css`

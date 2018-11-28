@@ -7,7 +7,7 @@ const Contact = ({ contenu }) => {
 
   return (
     <Fragment>
-      <Header page="/contact"/>
+      <Header page="/contact" fixedLogo/>
       <Div container paddingTop={4} paddingBottom={4}>
         <Content>{contenu}</Content>      
       </Div>

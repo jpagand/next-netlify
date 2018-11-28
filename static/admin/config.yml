@@ -102,5 +102,64 @@ collections:
                 {label: Texte_lien , name: texte_lien, widget: string, required: false},
               ]},
           ]}
+      - file: "content/epicerie-solidaire/index.json"
+        label: "Epicerie solidaire"
+        name: "epicerie-solidaire"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "epicerie-solidaire"}
+          - {label: Titre, name: titre, widget: string}
+          - {label: Image_intro, name: image_intro, widget: image}
+          - {label: Concept, name: section_concept, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Images, name: images, widget: list, required: false, default: [], fields: [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Legende, name: legende, widget: string, required: false}, 
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
+                ]}
+              ]},
+            ]}
+          - {label: Localisation, name: section_localisation, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Images, name: images, widget: list, required: false, fields: [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Legende, name: legende, widget: string, required: false}, 
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
+                ]}
+              ]},
+          ]}
+          - {label: Horaires, name: section_horaires, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Images, name: images, widget: list, required: false, fields: [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Legende, name: legende, widget: string, required: false}, 
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
+                ]}
+              ]},
+          ]}
+          - {label: FAQ, name: section_faq, widget: object, fields: [
+              {label: Texte_bouton, name: texte_bouton, widget: string, required: false}, 
+              {label: Titre, name: titre, widget: string, required: false}, 
+              {label: Parties, name: parties, widget: list, fields: [
+                {label: Title, name: titre, widget: string}, 
+                {label: Texte, name: texte, widget: markdown}, 
+                {label: Images, name: images, widget: list, required: false, fields: [
+                  {label: Image, name: image, widget: image}, 
+                  {label: Legende, name: legende, widget: string, required: false}, 
+                  {label: Lien_Video, name: lien_youtube, widget: string, required: false}
+                ]}
+              ]},
+          ]}
       
    

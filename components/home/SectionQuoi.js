@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Div, Title, Subheadline } from '../Typo';
 import Content from '../Content';
-import Image from './Image';
+import Image from '../Image';
 
 const Container = styled(Div)`
   background: ${props => props.color};

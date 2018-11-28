@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled, {css} from 'styled-components';
 import { withWindowScroll } from 'libreact/lib/WindowScrollSensor';
-import { Div, Title } from '../Typo';
-import Content from '../Content';
+import { Div, Title } from './Typo';
+import Content from './Content';
 import MenuSections from './MenuSections';
-import colors from '../Colors';
-import Media from '../Media';
+import colors from './Colors';
+import Media from './Media';
 console.log
 const Container = styled(Div)`
   background: url(${props => props.image}) no-repeat center center;
@@ -75,22 +75,36 @@ const Logo = styled('div')`
   `}
 `
 const INITIAL_HEIGHT = '100vh';
+const SMALL_HEIGHT = '50vh';
 class Hero extends Component {
   constructor(props) {
     super(props);
     this.state = {
       progress: 0,
-      height: INITIAL_HEIGHT
+      height: props.smallHeight ? SMALL_HEIGHT : INITIAL_HEIGHT
      };
   }
   computeScrollProgress = () => {
-    const windowHeight = process.browser ? window.innerHeight / 2 : 100;
+    let windowHeight = process.browser ? window.innerHeight / 2 : 100;
+    if (this.props.smallHeight) {
+      windowHeight = windowHeight / 2;
+    }
     const scrollY = process.browser ? window.scrollY - 100: 0;
     const progress = process.browser ? Math.min(scrollY/windowHeight, 1) : 0
     return Math.max(progress, 0)
   }
   componentDidMount() {
-    this.setState({progress: this.computeScrollProgress(), height: process.browser ? window.innerHeight + 'px' : INITIAL_HEIGHT});
+    let pixelHeight;
+    let windowHeight;
+    if (this.props.smallHeight) {
+      pixelHeight = window.innerHeight / 2;
+      windowHeight = SMALL_HEIGHT;
+    } else {
+      pixelHeight = window.innerHeight;
+      windowHeight = INITIAL_HEIGHT;
+    }
+    let height = process.browser ? pixelHeight + 'px' : windowHeight
+    this.setState({progress: this.computeScrollProgress(), height});
   }
 
   componentWillReceiveProps(props) {
@@ -98,12 +112,13 @@ class Hero extends Component {
   }
 
   render() {
-    const {image, titre, sections} = this.props;   
+    const {image, titre, sections, hideLogo} = this.props;   
     return (
-      <Container image={image} height={this.state.height}>        
-        <Logo progress={this.state.progress}>
+      <Container image={image} height={this.state.height}>      
+        {!hideLogo && <Logo progress={this.state.progress}>
           <img src="/static/img/les-anges-de-la-rue-logo.png"  srcSet="/static/img/les-anges-de-la-rue-logo@2x.png 2x, /static/img/les-anges-de-la-rue-logo@4x.png 4x" />
         </Logo>
+        }
         <Footer centerSm paddingBottomXs={1} paddingSm={[1.5,0]}>
           <Title paddingXs={[0,2]} paddingSm={0}><Content marginBottomSm={1.5} centerXs>{titre}</Content></Title>   
           <MenuSections sections={sections}/>

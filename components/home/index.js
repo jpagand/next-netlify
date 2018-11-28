@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import Header from '../Header';
-import Hero from './Hero';
+import Hero from '../Hero';
 import SectionQui from './SectionQui';
 import SectionQuoi from './SectionQuoi';
 import SectionComment from './SectionComment';
