@@ -71,6 +71,10 @@
           "type": "Ambassadeur",
           "metier": "Musicien et fils du célèbre chanteur Joe Dassin",
           "image": "/static/img/jonathan-dassin-square.jpg"
+        },
+        {
+          "nom": "Benjamin Castaldi",
+          "lien_youtube": "https://www.youtube.com/embed/YS0kpL0n-uo"
         }
       ],
       "images": [
