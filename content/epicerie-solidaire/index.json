@@ -3,18 +3,38 @@
   "image_intro": "/static/img/epicerie.jpg",
   "section_concept": {
     "texte_bouton": "Le concept",
-    "titre": "Concept"
+    "titre": "Concept",
+    "parties": [
+      {
+        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+      }
+    ]
   },
   "section_localisation": {
     "texte_bouton": "Localisation",
-    "titre": "Localisation"
+    "titre": "Localisation",
+    "parties": [
+      {
+        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+      }
+    ]
   },
   "section_horaires": {
     "texte_bouton": "Horaires",
-    "titre": "Horaires"
+    "titre": "Horaires",
+    "parties": [
+      {
+        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+      }
+    ]
   },
   "section_faq": {
     "texte_bouton": "Questions fréquentes",
-    "titre": "Questions fréquentes"
+    "titre": "Questions fréquentes",
+    "parties": [
+      {
+        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+      }
+    ]
   }
 }
