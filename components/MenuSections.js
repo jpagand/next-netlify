@@ -88,10 +88,11 @@ class MenuSections extends Component {
      };
   }
   isFixed = () => {
-    const windowHeight = process.browser ? window.innerHeight : 100;
-    const scrollY = process.browser ? window.scrollY + 60 : 0;
-    const progress = process.browser ? Math.min(scrollY/windowHeight, 1) : 0
-    return progress >= 1 ;
+    if (this.elem &&  process.browser && window.scrollY > 120) {
+      const rect = this.elem.getBoundingClientRect();
+      return rect.top < 60;
+    }
+      return false
   }
   componentDidMount() {
     this.setState({isFixed: this.isFixed()});
