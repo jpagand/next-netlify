@@ -31,6 +31,7 @@ const PictureContainer = styled(Div)`
 `
 const Picture = styled(Div)`
   max-width: 100%;
+  width: 100%;
 `
 const Legende = styled(Caption)`
   padding: 8px 0 8px 18px;
