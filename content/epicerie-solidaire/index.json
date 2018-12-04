@@ -33,7 +33,7 @@
     "titre": "",
     "parties": [
       {
-        "texte": "\n\n<div class=\"blue-bg white text-center\">\n\n</br>\n\n<div class=\"subheadline\">Localisation</div >\n\n<p>Epicerie solidaire des Anges de la Rue\r</br>\n\n3, rue Copernic\r</br>\n\n34770 Gigean\r</br>\n\nFrance</p>\n\n<p>\n\n<a class=\"btn white\" href=\"https://www.google.com/maps/place/Les+Anges+De+La+Rue/@43.4919191,3.7024393,16.71z/data=!4m5!3m4!1s0x0:0x82088dfd3991dce7!8m2!3d43.4924161!4d3.7037445\" target=\"_blank\">Localiser sur une carte</a>\n\n</p>\n\n</br>\n\n</div>",
+        "texte": "<div class=\"blue-bg white text-center\">\n\n</br>\n\n<div class=\"subheadline\">Localisation</div >\n\n<p>Epicerie solidaire des Anges de la Rue\n</br>\n\n3, rue Copernic\n</br>\n\n34770 Gigean\n</br>\n\nFrance</p>\n\n<p>\n\n<a class=\"btn white\" href=\"https://www.google.com/maps/place/Les+Anges+De+La+Rue/@43.4919191,3.7024393,16.71z/data=!4m5!3m4!1s0x0:0x82088dfd3991dce7!8m2!3d43.4924161!4d3.7037445\" target=\"_blank\">Localiser sur une carte</a>\n\n</p>\n\n</br>\n\n</div>\n\n\n\n</br>",
         "images": [
           {
             "image": "/static/img/etal-epicerie-anges-rue-gigean.jpg"
@@ -47,7 +47,7 @@
     "titre": "",
     "parties": [
       {
-        "texte": "<div class=\"red-bg white\" style=\"padding: 1px 15px 15px 15px\">\n\n<p class=\"subheadline\">Horaires d’ouverture de l’épicerie</p>\n<table>\n  <tbody>\n    <tr><td>Lundi</td><td>14h-18h</td></tr>\n    <tr><td>Mardi</td><td>14h-18h</td></tr>\n    <tr><td>Mercredi</td><td>14h-18h</td></tr>\n    <tr><td>Jeudi</td><td>14h-18h</td></tr>\n    <tr><td>Vendredi</td><td>14h-18h</td></tr>\n\n   <tr><td>Samedi</td><td>14h-18h</td></tr>\n\n   <tr><td>Diamanhce</td><td>Fermé</td></tr>\n\n  </tbody>\n</table>\n\n<p>Ces horaires sont applicables toute l’année.</p>\n</div>",
+        "texte": "<div class=\"red-bg white\" style=\"padding: 1px 15px 15px 15px\">\n\n<p class=\"subheadline\">Horaires d’ouverture de l’épicerie</p>\n<table>\n  <tbody>\n    <tr><td>Lundi</td><td>14h-18h</td></tr>\n    <tr><td>Mardi</td><td>14h-18h</td></tr>\n    <tr><td>Mercredi</td><td>14h-18h</td></tr>\n    <tr><td>Jeudi</td><td>14h-18h</td></tr>\n    <tr><td>Vendredi</td><td>14h-18h</td></tr>\n\n   <tr><td>Samedi</td><td>14h-18h</td></tr>\n\n   <tr><td>Diamanhce</td><td>Fermé</td></tr>\n\n  </tbody>\n</table>\n\n<p>Ces horaires sont applicables toute l’année.</p>\n</div>\n\n</br>",
         "images": [
           {
             "image": "/static/img/panier-solidaire-gigean-legume-fruit.jpg"
