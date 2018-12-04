@@ -1,39 +1,58 @@
 {
-  "titre": "epicerie solidaire",
+  "titre": "<span class=\"orange\">Les paniers solidaires</span> <span class=\"purple\">des Anges de la Rue</span>",
   "image_intro": "/static/img/epicerie.jpg",
   "section_concept": {
     "texte_bouton": "Le concept",
-    "titre": "Concept",
+    "titre": "Le bon plan pour faire ses courses, à Gigean (34) !",
     "parties": [
       {
-        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+        "titre": "Faites vos courses 3 fois moins cher qu’ailleurs en faisant une bonne action !",
+        "texte": "Que vous soyez en difficulté financière ou non, faites une bonne affaire tout en aidant les plus démunis, en soutenant l'action des **Anges de la Rue**.\r\n\n\r\n\nAu sein de notre association, vous pouvez faire vos courses **3 fois moins cher qu'ailleurs** (produits à dates courtes)\n\n\n\n<div class=\"encadre\">\n\n<p class=\"subheadline\">Avec 50 €</p>\r\n\n<p>Vous recevrez un colis alimentaire <strong>d'une valeur au moins égale ou supérieur à 150 €</strong>, grâce aux dons des supermarchés locaux.</p>\n\n</div>\n\nVous trouverez de nombreux produits de tous les jours à prix réduit, de quoi remplir votre réfrigérateur, des fruits et légumes, de la viande, des yaourts, du fromage, de la charcuterie, des viennoiseries, des plats préparés, des tielles, etc. Parfois même, du foie gras et du chocolat... suivant les arrivages : les aliments sont collectés le matin et distribués l’après midi.",
+        "images": [
+          {
+            "image": "/static/img/exemple-panier-solidaire-ange-rue.jpg"
+          }
+        ]
+      },
+      {
+        "titre": "Ouvert à tous sans conditions",
+        "texte": "* Le produits des ventes discount permet à l'association de continuer son action auprès des sans abris.\r\n* Ceux qui ont des poules ou cochons peuvent venir récupérer gratuitement les fruits et légumes abîmés.\r\n\nCompte tenu du nombre grandissant de bénéficiaires des paniers solidaires, les Anges de la rue recherchent des bénévoles pour la collecte et la distribution. Vous voulez faire partie de l’association ? Présentez-vous directement à l’Epicerie solidaire de Gigean."
+      },
+      {
+        "texte": "<div class=\"encadre encadre-orange-bg\">\n\n<p>Il y a également une <strong class=\"orange\">braderie</strong> dans les locaux de l’épicerie solidaire de Gigean où l’on peut trouver divers objets non alimentaires à la <strong class=\"orange\">moitié du prix</strong> pratiqués par les supermarchés, comme chez un discounter.</p>\n\n</div>"
       }
     ]
   },
   "section_localisation": {
     "texte_bouton": "Localisation",
-    "titre": "Localisation",
+    "titre": "",
     "parties": [
       {
-        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+        "texte": "\n\n<div class=\"blue-bg white text-center\">\n\n</br>\n\n<div class=\"subheadline\">Localisation</div >\n\n<p>Epicerie solidaire des Anges de la Rue\r</br>\n\n3, rue Copernic\r</br>\n\n34770 Gigean\r</br>\n\nFrance</p>\n\n<p>\n\n<a class=\"btn white\" href=\"https://www.google.com/maps/place/Les+Anges+De+La+Rue/@43.4919191,3.7024393,16.71z/data=!4m5!3m4!1s0x0:0x82088dfd3991dce7!8m2!3d43.4924161!4d3.7037445\" target=\"_blank\">Localiser sur une carte</a>\n\n</p>\n\n</br>\n\n</div>",
+        "images": [
+          {
+            "image": "/static/img/etal-epicerie-anges-rue-gigean.jpg"
+          }
+        ]
       }
     ]
   },
   "section_horaires": {
     "texte_bouton": "Horaires",
-    "titre": "Horaires",
+    "titre": "",
     "parties": [
       {
-        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+        "texte": "<div class=\"blue-bg white\" style=\"padding: 1px 15px 15px 15px\">\n\n<p class=\"subheadline\">Horaires d’ouverture de l’épicerie</p>\n<table>\n  <tbody>\n    <tr><td>Lundi</td><td>14h-18h</td></tr>\n    <tr><td>Mardi</td><td>14h-18h</td></tr>\n    <tr><td>Mercredi</td><td>14h-18h</td></tr>\n    <tr><td>Jeudi</td><td>14h-18h</td></tr>\n    <tr><td>Vendredi</td><td>14h-18h</td></tr>\n\n\\    <tr><td>Samedi</td><td>14h-18h</td></tr>\n\n\\    <tr><td>Diamanhce</td><td>Fermé</td></tr>\n\n\n  </tbody>\n</table>\n\n<p>Ces horaires sont applicables toute l’année.</p>\n</div>"
       }
     ]
   },
   "section_faq": {
     "texte_bouton": "Questions fréquentes",
-    "titre": "Questions fréquentes",
+    "titre": "",
     "parties": [
       {
-        "texte": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus felis sit amet dui congue condimentum. In pretium augue eget egestas egestas. Duis lobortis non risus vitae tempus. In vitae imperdiet augue, vitae auctor massa. Nullam eu ante dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mi risus, fringilla eget posuere vitae, mollis eget lorem. Aliquam viverra, ex in ornare sodales, ex dolor blandit dui, sit amet porta nisl ligula vitae odio. Donec rutrum massa pharetra ultrices dignissim. Mauris ac auctor sem. Aliquam semper semper tincidunt. Nulla vestibulum ut nunc vehicula semper."
+        "titre": "",
+        "texte": "<p class=\"headline purple\">Questions fréquentes</p>\n\n<div class=\"subheadline purple\">Que contient un panier ?\r</div>\n\nYaourt, charcuterie, fromage, tielles, plats traiteurs, viennoiseries, oeufs, viande, épicerie, fruits et légumes... Nombreux produits de tous les jours mais ce n’est pas contractuel. Ces produits sont à dates limites de consommation ou dates conseillées de consommation.\r\n\n<br/>\n\n<div class=\"subheadline purple\">Pouvons-nous choisir ce que l’on met dans mon panier ?\r\r</div>\n\nVous choisissez-vous même vos fruits et légumes qui sont à votre disposition à volonté. Pour le reste du panier, une bénévole vous le prépare, en tenant compte de ce que vous n’aimez pas et du partage de la collecte du jour.\r\n\n\r<br/>\n\n<div class=\"subheadline purple\">Puis-je venir sans rendez-vous ?\r\r</div>\n\nIl est conseillé de téléphoner pour prévenir de votre venue, afin de gérer au mieux le flux de personnes.\r\n\n\r<br/>\n\n<div class=\"subheadline purple\">La somme de 50€ demandé pour mon panier peut-elle être modifié ?\r\r</div>\n\nVous pouvez demander plusieurs paniers à 50€, pour une somme inférieure il faut en discuter avec la coordinatrice au téléphone avant.\r\n\n\r<br/>\n\n<div class=\"subheadline purple\">Puis-je payer par carte bleue ou chèque ?\r\r</div>\n\nNon il faut payer en espèce ce qui facilite grandement la gestion de l’épicerie qui demande déjà beaucoup de travail à ses bénévoles. Penser à prévoir 50€ en espèce.\r\n\n\r<br/>\n\n<div class=\"subheadline purple\">Autre chose ?\r\r</div>\n\nPenser à amener des sacs de courses ainsi que des sacs de congélation / glacière car il y a des produits frais et d’autres congelés.\n\n<br/>\n\n\n\n<p class=\"headline purple\">L’épicerie Solidaire de Gigean, un concept ou tout le monde y gagne !</p>\n\nLes Anges de la Rue c’est une grande famille qui accueille, héberge et nourrit depuis 2013 toutes les personnes sans domicile, d’où qu’ils viennent. Depuis 2015, ils nourissent également à prix réduit le reste de la population qui le souhaite car malgré un logement et parfois même un emploi, de nombreuses familles ont du mal à joindre les deux bouts. <a href=\"/\">En savoir plus sur l’association\r</a>\r\n\nLes bénévoles de l’association ont mis en place un système de paniers solidaires grâce à la collecte d’invendus des supermarchés. En août 2018 l’association a obtenu l'habilitation alimentaire officielle délivrée par la préfecture, ouvrant droit aux aides de l'état, aux subventions, aux excédents européens et à la banque alimentaire. De quoi étoffer encore plus largement les paniers solidaires. Les Anges de la Rue luttent contre le gaspillage alimentaire car malgrè la loi n° 2016-138 du 11 février 2016 qui oblige les supermarchés à distribuer leurs invendus seul 22% sont sauvé de la destruction.\r\n\n\r\n\n**Ouverte à TOUS sans exception**, pour bénéficier d’un panier solidaire, il n’y a pas de critères de sélection, pas de papiers à présenter, pas d’adhésion et pas de rations.\r\n\n\r\n\nIl suffit de téléphoner au 06.11.33.00.31 pour prévenir de votre venue, de vous munir de 3 sacs dont 1 isothèrme ou d’une glaçière, de 50€ en espèce et de venir à l’épicerie à ses heures d’ouverture. Il vous sera demandé vos contres-indications alimentaires et un(e) bénévole remplira vos sacs pendant que vous choisissez vous même vos fruits et légumes.\r\n\n\r\n\nLes paniers solidaires n’apportent que des avantages :\r\n\n\r\n\n* En venant à l’épicerie solidaire des Anges de la rue, les bénéficiaires des paniers alimentaires à petits prix et les bénévoles aident l’association dans son action d’aide aux sans abri.\r\n* Venir à l’épicerie des Anges de la rue c’est aussi participer au fonctionnement et à la vie de l’épicerie solidaire. En effet, l’épicerie a besoin d’un camion frigorifique (à entretenir, à assurer et à approvisionner très régulièrement en gasoil), d’une chambre froide et de moyens de communication, et doit également assumer des loyers conséquents.\r\n* Cela permet également de mettre en route d’autres projets comme par exemple celui des bus hôtels.\r\n* Grâce à cette action de distribution d’aliments destinés à la destruction malgré le fait qu’ils soient encore consommables, les Anges de la Rue, les bénévoles et les bénéficiaires luttent contre la faim et la pauvreté en France et luttent également contre le gaspillage alimentaire : un geste éco-responsable pour la planète."
       }
     ]
   }
