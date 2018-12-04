@@ -42,7 +42,7 @@
     "titre": "",
     "parties": [
       {
-        "texte": "<div class=\"blue-bg white\" style=\"padding: 1px 15px 15px 15px\">\n\n<p class=\"subheadline\">Horaires d’ouverture de l’épicerie</p>\n<table>\n  <tbody>\n    <tr><td>Lundi</td><td>14h-18h</td></tr>\n    <tr><td>Mardi</td><td>14h-18h</td></tr>\n    <tr><td>Mercredi</td><td>14h-18h</td></tr>\n    <tr><td>Jeudi</td><td>14h-18h</td></tr>\n    <tr><td>Vendredi</td><td>14h-18h</td></tr>\n\n\\    <tr><td>Samedi</td><td>14h-18h</td></tr>\n\n\\    <tr><td>Diamanhce</td><td>Fermé</td></tr>\n\n\n  </tbody>\n</table>\n\n<p>Ces horaires sont applicables toute l’année.</p>\n</div>"
+        "texte": "<div class=\"red-bg white\" style=\"padding: 1px 15px 15px 15px\">\n\n<p class=\"subheadline\">Horaires d’ouverture de l’épicerie</p>\n<table>\n  <tbody>\n    <tr><td>Lundi</td><td>14h-18h</td></tr>\n    <tr><td>Mardi</td><td>14h-18h</td></tr>\n    <tr><td>Mercredi</td><td>14h-18h</td></tr>\n    <tr><td>Jeudi</td><td>14h-18h</td></tr>\n    <tr><td>Vendredi</td><td>14h-18h</td></tr>\n\n   <tr><td>Samedi</td><td>14h-18h</td></tr>\n\n   <tr><td>Diamanhce</td><td>Fermé</td></tr>\n\n  </tbody>\n</table>\n\n<p>Ces horaires sont applicables toute l’année.</p>\n</div>"
       }
     ]
   },
