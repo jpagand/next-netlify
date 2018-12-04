@@ -16,7 +16,12 @@
       },
       {
         "titre": "Ouvert à tous sans conditions",
-        "texte": "* Le produits des ventes discount permet à l'association de continuer son action auprès des sans abris.\r\n* Ceux qui ont des poules ou cochons peuvent venir récupérer gratuitement les fruits et légumes abîmés.\r\n\nCompte tenu du nombre grandissant de bénéficiaires des paniers solidaires, les Anges de la rue recherchent des bénévoles pour la collecte et la distribution. Vous voulez faire partie de l’association ? Présentez-vous directement à l’Epicerie solidaire de Gigean."
+        "texte": "* Le produits des ventes discount permet à l'association de continuer son action auprès des sans abris.\r\n* Ceux qui ont des poules ou cochons peuvent venir récupérer gratuitement les fruits et légumes abîmés.\r\n\nCompte tenu du nombre grandissant de bénéficiaires des paniers solidaires, les Anges de la rue recherchent des bénévoles pour la collecte et la distribution. Vous voulez faire partie de l’association ? Présentez-vous directement à l’Epicerie solidaire de Gigean.",
+        "images": [
+          {
+            "image": "/static/img/danse-avec-panier-ange-rue.jpg"
+          }
+        ]
       },
       {
         "texte": "<div class=\"encadre encadre-orange-bg\">\n\n<p>Il y a également une <strong class=\"orange\">braderie</strong> dans les locaux de l’épicerie solidaire de Gigean où l’on peut trouver divers objets non alimentaires à la <strong class=\"orange\">moitié du prix</strong> pratiqués par les supermarchés, comme chez un discounter.</p>\n\n</div>"
@@ -42,7 +47,12 @@
     "titre": "",
     "parties": [
       {
-        "texte": "<div class=\"red-bg white\" style=\"padding: 1px 15px 15px 15px\">\n\n<p class=\"subheadline\">Horaires d’ouverture de l’épicerie</p>\n<table>\n  <tbody>\n    <tr><td>Lundi</td><td>14h-18h</td></tr>\n    <tr><td>Mardi</td><td>14h-18h</td></tr>\n    <tr><td>Mercredi</td><td>14h-18h</td></tr>\n    <tr><td>Jeudi</td><td>14h-18h</td></tr>\n    <tr><td>Vendredi</td><td>14h-18h</td></tr>\n\n   <tr><td>Samedi</td><td>14h-18h</td></tr>\n\n   <tr><td>Diamanhce</td><td>Fermé</td></tr>\n\n  </tbody>\n</table>\n\n<p>Ces horaires sont applicables toute l’année.</p>\n</div>"
+        "texte": "<div class=\"red-bg white\" style=\"padding: 1px 15px 15px 15px\">\n\n<p class=\"subheadline\">Horaires d’ouverture de l’épicerie</p>\n<table>\n  <tbody>\n    <tr><td>Lundi</td><td>14h-18h</td></tr>\n    <tr><td>Mardi</td><td>14h-18h</td></tr>\n    <tr><td>Mercredi</td><td>14h-18h</td></tr>\n    <tr><td>Jeudi</td><td>14h-18h</td></tr>\n    <tr><td>Vendredi</td><td>14h-18h</td></tr>\n\n   <tr><td>Samedi</td><td>14h-18h</td></tr>\n\n   <tr><td>Diamanhce</td><td>Fermé</td></tr>\n\n  </tbody>\n</table>\n\n<p>Ces horaires sont applicables toute l’année.</p>\n</div>",
+        "images": [
+          {
+            "image": "/static/img/panier-solidaire-gigean-legume-fruit.jpg"
+          }
+        ]
       }
     ]
   },
