@@ -1,21 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheetManager } from 'styled-components'
-import EpicerieSolidaire from '../../components/epicerieSolidaire'
+import PaniersSolidaires from '../../components/paniersSolidaires'
 
-const EpicerieSolidairePagePreview = ({ entry, widgetFor, widgetsFor }) => {
+const PaniersSolidairesPagePreview = ({ entry, widgetFor, widgetsFor }) => {
   const data = entry.getIn(['data']).toJS()
   const iframe = document.getElementsByTagName('iframe')[1]  
   const iframeHeadElem = iframe.contentDocument.head
   return (
     <StyleSheetManager target={iframeHeadElem}>
-        <EpicerieSolidaire {...data}/>
+        <PaniersSolidaires {...data}/>
     </StyleSheetManager>
   
   )
 }
 
-EpicerieSolidairePagePreview.propTypes = {
+PaniersSolidairesPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
@@ -23,4 +23,4 @@ EpicerieSolidairePagePreview.propTypes = {
   widgetsFor: PropTypes.func,
 }
 
-export default EpicerieSolidairePagePreview
+export default PaniersSolidairesPagePreview

@@ -3,7 +3,7 @@ import CMS from 'netlify-cms';
 import HomePagePreview from '../../cms/preview-templates/HomePagePreview'
 import ContactPagePreview from '../../cms/preview-templates/ContactPagePreview'
 import StyleExamplePagePreview from '../../cms/preview-templates/StyleExamplePagePreview'
-import EpicerieSolidairePagePreview from '../../cms/preview-templates/EpicerieSolidairePagePreview'
+import PaniersSolidairesPagePreview from '../../cms/preview-templates/PaniersSolidairesPagePreview'
 
 class Admin extends Component {
   componentDidMount () {
@@ -12,7 +12,7 @@ class Admin extends Component {
       CMS.registerPreviewTemplate('home', HomePagePreview);   
       CMS.registerPreviewTemplate('contact', ContactPagePreview);   
       CMS.registerPreviewTemplate('style-example', StyleExamplePagePreview);   
-      CMS.registerPreviewTemplate('epicerie-solidaire', EpicerieSolidairePagePreview);   
+      CMS.registerPreviewTemplate('paniers-solidaires', PaniersSolidairesPagePreview);   
   }
   render() {
     return (

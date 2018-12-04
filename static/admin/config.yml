@@ -102,11 +102,11 @@ collections:
                 {label: Texte_lien , name: texte_lien, widget: string, required: false},
               ]},
           ]}
-      - file: "content/epicerie-solidaire/index.json"
-        label: "Epicerie solidaire"
-        name: "epicerie-solidaire"
+      - file: "content/paniers-solidaires/index.json"
+        label: "Paniers solidaires"
+        name: "paniers-solidaires"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "epicerie-solidaire"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "paniers-solidaires"}
           - {label: Titre, name: titre, widget: string}
           - {label: Image_intro, name: image_intro, widget: image}
           - {label: Concept, name: section_concept, widget: object, fields: [

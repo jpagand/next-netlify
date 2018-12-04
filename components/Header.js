@@ -116,8 +116,8 @@ class Header extends Component {
           <Link href="/">
             <StyledLink href="/" active={this.isActive('')}>L'association</StyledLink> 
           </Link>
-          <Link href="/epicerie-solidaire">
-           <StyledLink href="/epicerie-solidaire" active={this.isActive('/epicerie-solidaire')}>L'épicerie solidaire</StyledLink>   
+          <Link href="/paniers-solidaires">
+           <StyledLink href="/paniers-solidaires" active={this.isActive('/paniers-solidaires')}>L'épicerie solidaire</StyledLink>   
           </Link>
           <Link href="/contact">
            <StyledLink href="/contact" active={this.isActive('/contact')}>Contact</StyledLink>   
